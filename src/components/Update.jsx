@@ -105,7 +105,7 @@ const DailyUpdate = () => {
           data-aos="fade-right"
           data-aos-duration={isMobile ? 1500 : 2500}
         >
-          <h3>
+          <h3 style={{marginTop:"0px"}}>
             <span className="update-alram-ico">
               <IoIosAlarm />{" "}
             </span>
@@ -119,7 +119,7 @@ const DailyUpdate = () => {
                 <div className="update-content-daily">
                   {/* map */}
 
-                  {dailyProgram &&
+                   {dailyProgram &&
                     dailyProgram.map((data, index) => (
                       <div key={index}>
                         <div className="update-main-innerdiv">
@@ -137,7 +137,7 @@ const DailyUpdate = () => {
               </div>
             </div>
             <div className="update-blob"></div>
-          </div>
+          </div> 
         </div>
 
         {/* Second main cart */}
@@ -147,7 +147,7 @@ const DailyUpdate = () => {
           data-aos-duration={isMobile ? 1500 : 2500}
           className="update-upcoming-fest update-innerdivs"
         >
-          <h3>
+          <h3 style={{marginTop:"0px"}}>
             <span className="update-alram-ico">
               <IoIosAlarm />
             </span>
@@ -178,14 +178,14 @@ const DailyUpdate = () => {
           data-aos-duration={isMobile ? 1500 : 2500}
           className="update-latest-update update-innerdivs"
         >
-          <h3>
+          <h3 style={{marginTop:"0px"}}>
             <span className="update-alram-ico">
               <IoIosAlarm />
             </span>{" "}
             &nbsp; Latest Updates
           </h3>
           <div className="update-card">
-            <div className="update-bg">
+            <div className="update-bg" >
               <div className="update-scrolling-container">
                 <div className="update-content">
                   {latestUpdate &&

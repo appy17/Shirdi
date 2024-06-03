@@ -23,18 +23,18 @@ import Social from '../components/social-icon/Social';
  import g21 from "../assets/images/g21.jpeg";
  import g22 from "../assets/images/g22.jpeg";
  import g23 from "../assets/images/g23.jpeg";
-//  import g24 from "../assets/images/g24.jpeg";
-//  import g25 from "../assets/images/g26.jpeg";
-//  import g26 from "../assets/images/g27.jpeg";
-//  import g27 from "../assets/images/g28.jpeg";
-//  import g28 from "../assets/images/g29.jpeg";
-//  import g29 from "../assets/images/g30.jpeg";
-//  import g30 from "../assets/images/g31.jpeg";
-//  import g31 from "../assets/images/g32.jpeg";
-//  import g32 from "../assets/images/g33.jpeg";
-//  import g33 from "../assets/images/g34.jpeg";
-//  import g34 from "../assets/images/g35.jpeg";
-//  import g35 from "../assets/images/g36.jpeg";
+ import g24 from "../assets/images/g24.jpeg";
+ import g25 from "../assets/images/g26.jpeg";
+ import g26 from "../assets/images/g27.jpeg";
+ import g27 from "../assets/images/g28.jpeg";
+ import g28 from "../assets/images/g29.jpeg";
+ import g29 from "../assets/images/g30.jpeg";
+ import g30 from "../assets/images/g31.jpeg";
+ import g31 from "../assets/images/g32.jpeg";
+ import g32 from "../assets/images/g33.jpeg";
+ import g33 from "../assets/images/g34.jpeg";
+ import g34 from "../assets/images/g35.jpeg";
+ import gallery from "../assets/images/galleryimage.jpg";
 //  import g36 from "../assets/images/g37.jpeg";
  
 //  import g38 from "../assets/images/g25.jpeg";
@@ -60,16 +60,17 @@ const images = [
   g21,
   g22,
   g23,
-//   g24,
-//   g25,
-//   g26,
-//   g27,
-//  g28,
-//   g29,
-//   g30,
-//   g31,g32,
-//   g33,
-//   g34,g35,
+  g24,
+  g25,
+  g26,
+  g27,
+ g28,
+  g29,
+  g30,
+  g31,g32,
+  g33,
+  g34,
+  //g35,
 //   g36,
 //   g38,
  
@@ -112,7 +113,7 @@ const Gallery = () => {
 
     <div
     className="about-background"
-    // style={{ backgroundImage: `url(${Places})` }}
+    style={{ backgroundImage: `url(${gallery})` }}
 ></div>
 <div>
     <marquee behavior="" direction="">
@@ -123,17 +124,17 @@ const Gallery = () => {
         🚩
     </marquee>
     <div className="about-path">
-        <span> Home &#9654; Sai Temple &#9654; Place to Visit
+        <span> Home &#9654; Sai Temple &#9654; Photo Gallery
 </span>
     </div>
     <div className="places-head">
-        <h1>Places Around Shirdi
+        <h1>Photo Gallery
 </h1>
     </div>
 </div>
 
 
-
+<div className='gallery-section'>
     <div className="gallery-wrapper">
       <div className="gallery-inner">
         {images.map((src, index) => (
@@ -154,6 +155,8 @@ const Gallery = () => {
           </div>
         </>
       )}
+    </div>
+
     </div>
     <Footer/>
     </>

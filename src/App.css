@@ -1503,11 +1503,19 @@ padding-bottom: 5% ;
 
 /* gallery section */
 
+.gallery-section{
+  background: rgb(247, 245, 245);
+  padding-top: 5%;
+}
+
 .gallery-wrapper {
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+
+  
 }
 
 .gallery-wrapper img {
@@ -1517,6 +1525,21 @@ padding-bottom: 5% ;
 
 .gallery-wrapper .gallery-img img {
   cursor: pointer;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.gallery-wrapper .gallery-img img:hover {
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(1.5);
+  transition: 1s ease;
+}
+
+.gallery-wrapper .gallery-img:has(img:hover) img:not(:hover) {
+  scale: 0.8;
+  opacity: 0.5;
+  filter: grayscale(70%);
 }
 
 .gallery-wrapper {
@@ -1528,15 +1551,20 @@ padding-bottom: 5% ;
   position: relative;
 }
 
-.gallery-popup.active + .gallery-overlay {
+.gallery-overlay {
   content: "";
   position: fixed;
   width: 100%;
   height: 100%;
   inset: 0;
-  background-color: rgb(0 0 0 / 75%);
+  background: rgba(0, 0, 0, 0.75);
   z-index: 5;
   overflow: hidden;
+  display: none;
+}
+
+.gallery-popup.active ~ .gallery-overlay {
+  display: block;
 }
 
 .gallery-popup {
@@ -1590,7 +1618,7 @@ padding-bottom: 5% ;
   font-size: 20px;
   cursor: pointer;
   padding: 10px;
-  background-color: rgb(255 255 255 / 75%);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .gallery-popup .prev {
@@ -1603,7 +1631,7 @@ padding-bottom: 5% ;
   font-size: 20px;
   cursor: pointer;
   padding: 10px;
-  background-color: rgb(255 255 255 / 75%);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .gallery-wrapper .gallery-inner {
@@ -1634,82 +1662,6 @@ padding-bottom: 5% ;
     transform: translateX(100vw);
     opacity: 0;
   }
-  5% {
-    transform: translateX(95vw);
-    opacity: 0.15;
-  }
-  10% {
-    transform: translateX(90vw);
-    opacity: 0.1;
-  }
-  15% {
-    transform: translateX(85vw);
-    opacity: 0.2;
-  }
-  20% {
-    transform: translateX(80vw);
-    opacity: 0.2;
-  }
-  25% {
-    transform: translateX(75vw);
-    opacity: 0.2;
-  }
-  30% {
-    transform: translateX(70vw);
-    opacity: 0.3;
-  }
-  35% {
-    transform: translateX(75vw);
-    opacity: 0.35;
-  }
-  40% {
-    transform: translateX(60vw);
-    opacity: 0.4;
-  }
-  45% {
-    transform: translateX(55vw);
-    opacity: 0.45;
-  }
-  50% {
-    transform: translateX(50vw);
-    opacity: 0.5;
-  }
-  55% {
-    transform: translateX(45vw);
-    opacity: 0.55;
-  }
-  60% {
-    transform: translateX(40vw);
-    opacity: 0.6;
-  }
-  65% {
-    transform: translateX(65vw);
-    opacity: 0.65;
-  }
-  70% {
-    transform: translateX(30vw);
-    opacity: 0.7;
-  }
-  75% {
-    transform: translateX(25vw);
-    opacity: 0.75;
-  }
-  80% {
-    transform: translateX(20vw);
-    opacity: 0.8;
-  }
-  85% {
-    transform: translateX(15vw);
-    opacity: 0.85;
-  }
-  90% {
-    transform: translateX(10vw);
-    opacity: 0.9;
-  }
-  95% {
-    transform: translateX(5vw);
-    opacity: 0.95;
-  }
   100% {
     transform: translateX(0vw);
     opacity: 1;
@@ -1720,82 +1672,6 @@ padding-bottom: 5% ;
   0% {
     transform: translateX(-100vw);
     opacity: 0;
-  }
-  5% {
-    transform: translateX(-95vw);
-    opacity: 0.15;
-  }
-  10% {
-    transform: translateX(-90vw);
-    opacity: 0.1;
-  }
-  15% {
-    transform: translateX(-85vw);
-    opacity: 0.2;
-  }
-  20% {
-    transform: translateX(-80vw);
-    opacity: 0.2;
-  }
-  25% {
-    transform: translateX(-75vw);
-    opacity: 0.2;
-  }
-  30% {
-    transform: translateX(-70vw);
-    opacity: 0.3;
-  }
-  35% {
-    transform: translateX(-75vw);
-    opacity: 0.35;
-  }
-  40% {
-    transform: translateX(-60vw);
-    opacity: 0.4;
-  }
-  45% {
-    transform: translateX(-55vw);
-    opacity: 0.45;
-  }
-  50% {
-    transform: translateX(-50vw);
-    opacity: 0.5;
-  }
-  55% {
-    transform: translateX(-45vw);
-    opacity: 0.55;
-  }
-  60% {
-    transform: translateX(-40vw);
-    opacity: 0.6;
-  }
-  65% {
-    transform: translateX(-65vw);
-    opacity: 0.65;
-  }
-  70% {
-    transform: translateX(-30vw);
-    opacity: 0.7;
-  }
-  75% {
-    transform: translateX(-25vw);
-    opacity: 0.75;
-  }
-  80% {
-    transform: translateX(-20vw);
-    opacity: 0.8;
-  }
-  85% {
-    transform: translateX(-15vw);
-    opacity: 0.85;
-  }
-  90% {
-    transform: translateX(-10vw);
-    opacity: 0.9;
-  }
-  95% {
-    transform: translateX(-5vw);
-    opacity: 0.95;
   }
   100% {
     transform: translateX(0vw);
