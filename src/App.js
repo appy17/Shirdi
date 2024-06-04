@@ -19,6 +19,7 @@ import Saicharita from "./pages/saicharita/Saicharita";
 import SaileelaMag from "./pages/saileelaMag/SaileelaMag";
 import AnnualReports from "./pages/Annual Reports/AnnualReports";
 import Festival from "./pages/Festival";
+import Puja from "./pages/Puja";
 
 // import Regulations from "./pages/Regulations";
 
@@ -47,6 +48,9 @@ function App() {
         <Route path="/saileelamag" element={<SaileelaMag/>} />
         <Route path="/annualreports" element={<AnnualReports/>} />
         <Route path="/festival" element={<Festival/>} />
+        <Route path="/pooja" element={<Puja/>} />
+
+  
 
         
 
