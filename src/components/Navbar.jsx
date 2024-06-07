@@ -6,6 +6,7 @@ import { IoClose } from "react-icons/io5";
 import Logo from "../assets/images/logo.gif";
 import NavbarItems from "./NavbarItems";
 import items from "../Data/navlist.json";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -22,11 +23,10 @@ const Navbar = () => {
             <FaApple /> <span>IOS</span>
           </div>
         </div>
-
-        <div className="logo">
-          <img src={Logo} alt="" width={70} />
-          <span>Shri Sai Sansthan Trust, Shirdi</span>
-        </div>
+        <Link to="/" className="logo"> {/* Use href="/" if not using react-router */}
+      <img src={Logo} alt="Logo" width={70} />
+      <span>Shri Sai Sansthan Trust, Shirdi</span>
+    </Link>
 
         <div
           className="humburger"

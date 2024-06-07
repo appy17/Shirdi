@@ -4,12 +4,13 @@ import Darshan from "../assets/images/darshan.png";
 import Aarti from "../assets/images/aarti.png";
 import Accommodity from "../assets/images/Accommodation.png";
 import Publications from "../assets/images/publications.png";
-import Donate from "../assets/images/donate1.png";
-import membership from "../assets/images/membership.png";
+import Donate from "../assets/images/donationicon.png";
+import membership from "../assets/images/membershipicon.png";
 import pujas from "../assets/images/pujaicon.webp";
-import temple from "../assets/images/templeicon.png";
-import palaki from "../assets/images/palakiicon.png";
-import vendor from "../assets/images/salesmanicon.png";
+import temple from "../assets/images/templeicon2.png";
+import palaki from "../assets/images/palakiicon2.png";
+import magzine  from "../assets/images/magzineicon.png";
+ 
 import "../styles.css";
 
 const Services = () => {
@@ -112,7 +113,7 @@ const Services = () => {
               </div>
             </div></a>
 
-            <a href="">
+            <a href="https://online.sai.org.in/#/login">
             <div
               className="e-card playing"
               data-aos="fade-left"
@@ -147,13 +148,14 @@ const Services = () => {
               <div className="wave"></div>
 
               <div className="infotop">
-                <img src={Donate} alt="" className="image white-image" />
+                <img src={Donate} alt="" className="image circle" />
                 <br />
                 Donation
                 <br />
               </div>
             </div></a>
-
+            
+            <a href="https://online.sai.org.in/#/login">
             <div
               className="e-card playing"
               data-aos="fade-up"
@@ -166,50 +168,57 @@ const Services = () => {
               <div className="wave"></div>
 
               <div className="infotop">
+                <img src={membership} alt="" className="image circle" />
+                <br />
+                Membership
+                <br />
+              </div>
+            </div>
+            </a>
+
+            <a href="https://sai.org.in/online_services/">
+            <div
+              className="e-card playing"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
+              <div class="image"></div>
+
+              <div className="wave"></div>
+              <div className="wave"></div>
+              <div className="wave"></div>
+
+              <div className="infotop">
+                <img src={temple} alt="" className="image circle" />
+                <br />
+                Temple Registration
+                <br />
+              </div>
+            </div>
+            </a>
+  
+            <a href="https://sai.org.in/online_services/">
+            <div
+              className="e-card playing"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
+              <div class="image"></div>
+
+              <div className="wave"></div>
+              <div className="wave"></div>
+              <div className="wave"></div>
+
+              <div className="infotop">
                 <img src={palaki} alt="" className="image circle" />
                 <br />
-                Accommodation
+                Palkhi Registration
                 <br />
               </div>
             </div>
-            <div
-              className="e-card playing"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <div class="image"></div>
-
-              <div className="wave"></div>
-              <div className="wave"></div>
-              <div className="wave"></div>
-
-              <div className="infotop">
-                <img src={vendor} alt="" className="image circle" />
-                <br />
-                Donate
-                <br />
-              </div>
-            </div>
-  
-            <div
-              className="e-card playing"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-            >
-              <div class="image"></div>
-
-              <div className="wave"></div>
-              <div className="wave"></div>
-              <div className="wave"></div>
-
-              <div className="infotop">
-                <img src={temple} alt="" className="image white-image" />
-                <br />
-                Donate
-                <br />
-              </div>
-            </div>
+            </a>
               
+              <a href="https://online.sai.org.in/#/login">
             <div
               className="e-card playing"
               data-aos="fade-left"
@@ -222,12 +231,13 @@ const Services = () => {
               <div className="wave"></div>
 
               <div className="infotop">
-                <img src={pujas} alt="" className="image white-image" />
+                <img src={magzine} alt="" className="image circle" />
                 <br />
-                Donate
+                Saileela Magazine Subscription
                 <br />
               </div>
             </div>
+            </a>
 
 
 
