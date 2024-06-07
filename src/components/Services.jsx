@@ -6,12 +6,15 @@ import Accommodity from "../assets/images/Accommodation.png";
 import Publications from "../assets/images/publications.png";
 import Donate from "../assets/images/donate1.png";
 import membership from "../assets/images/membership.png";
-
+import pujas from "../assets/images/pujaicon.webp";
+import temple from "../assets/images/templeicon.png";
+import palaki from "../assets/images/palakiicon.png";
+import vendor from "../assets/images/salesmanicon.png";
 import "../styles.css";
 
 const Services = () => {
   return (
-    <section>
+    <section className="services-section">
       <div className="title-wrapper about-title-wrapper">
         <div className="about-head">
           <h3>
@@ -30,7 +33,7 @@ const Services = () => {
         </p>
         <div className="ser-icons">
           <div className="first">
-            <div
+           <a href="https://online.sai.org.in/#/paidDarshanAvailability"> <div
               className="e-card playing"
               data-aos="fade-right"
               data-aos-duration="1500"
@@ -47,9 +50,9 @@ const Services = () => {
                 Darshan
                 <br />
               </div>
-            </div>
+            </div></a>
 
-            <div
+           <a href="https://online.sai.org.in/#/reopenaartiAvailability"> <div
               className="e-card playing"
               data-aos="zoom-in"
               data-aos-duration="1500"
@@ -67,7 +70,9 @@ const Services = () => {
                 <br />
               </div>
             </div>
-
+            </a>
+              
+            <a href="https://online.sai.org.in/#/satyanarayanaPooja">
             <div
               className="e-card playing"
               data-aos="fade-left"
@@ -85,13 +90,12 @@ const Services = () => {
                 Pooja
                 <br />
               </div>
-            </div>
-          </div>
+            </div></a>
 
-          <div className="second">
+            <a href="https://online.sai.org.in/#/Publications">
             <div
               className="e-card playing"
-              data-aos="fade-up-right"
+              data-aos="fade-left"
               data-aos-duration="1500"
             >
               <div className="image"></div>
@@ -106,7 +110,49 @@ const Services = () => {
                 Publications
                 <br />
               </div>
+            </div></a>
+
+            <a href="">
+            <div
+              className="e-card playing"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
+              <div className="image"></div>
+
+              <div className="wave"></div>
+              <div className="wave"></div>
+              <div className="wave"></div>
+
+              <div className="infotop">
+                <img src={Accommodity} alt="" className="image" />
+                <br />
+                Accommodation
+                <br />
+              </div>
             </div>
+            </a>
+          </div>
+
+          <div className="second">
+           <a href="https://online.sai.org.in/#/donation"> <div
+              className="e-card playing"
+              data-aos="fade-up-right"
+              data-aos-duration="1500"
+            >
+              <div className="image"></div>
+
+              <div className="wave"></div>
+              <div className="wave"></div>
+              <div className="wave"></div>
+
+              <div className="infotop">
+                <img src={Donate} alt="" className="image white-image" />
+                <br />
+                Donation
+                <br />
+              </div>
+            </div></a>
 
             <div
               className="e-card playing"
@@ -120,7 +166,7 @@ const Services = () => {
               <div className="wave"></div>
 
               <div className="infotop">
-                <img src={Accommodity} alt="" className="image" />
+                <img src={palaki} alt="" className="image circle" />
                 <br />
                 Accommodation
                 <br />
@@ -138,12 +184,73 @@ const Services = () => {
               <div className="wave"></div>
 
               <div className="infotop">
-                <img src={Donate} alt="" className="image white-image" />
+                <img src={vendor} alt="" className="image circle" />
                 <br />
                 Donate
                 <br />
               </div>
             </div>
+  
+            <div
+              className="e-card playing"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
+              <div class="image"></div>
+
+              <div className="wave"></div>
+              <div className="wave"></div>
+              <div className="wave"></div>
+
+              <div className="infotop">
+                <img src={temple} alt="" className="image white-image" />
+                <br />
+                Donate
+                <br />
+              </div>
+            </div>
+              
+            <div
+              className="e-card playing"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+            >
+              <div class="image"></div>
+
+              <div className="wave"></div>
+              <div className="wave"></div>
+              <div className="wave"></div>
+
+              <div className="infotop">
+                <img src={pujas} alt="" className="image white-image" />
+                <br />
+                Donate
+                <br />
+              </div>
+            </div>
+
+
+
+                
+{/* <div className="coin">
+  <div className="side heads">
+  <img src={Donate} alt="" className="image white-image" />
+  </div>
+  <div className="side tails">
+  <img src={Donate} alt="" className="image white-image" />
+</div>
+</div>
+
+<div class="badge-container">
+  <div class="badge yellow">
+  <img src={Donate} alt="" className="image white-image" />
+  </div>
+  <div class="badge gray">
+    <h3>Tailwind CSS badge design</h3>
+  </div>
+</div> */}
+
+
           </div>
         </div>
       </div>

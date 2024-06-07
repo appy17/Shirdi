@@ -28,6 +28,7 @@ const Carousel = () => {
 
   return (
     <>
+    <section className="carosel_section">
       <div className="embla" ref={emblaRef}>
         <div className="embla__container">
           {images.map((image) => (
@@ -114,6 +115,7 @@ const Carousel = () => {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 };

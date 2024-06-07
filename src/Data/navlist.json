@@ -73,7 +73,7 @@
         "children": [
             {
                 "title": "Appeal",
-                "path" : "/"
+                "path" : "/appeal"
             },
             {
                 "title": "Notice",

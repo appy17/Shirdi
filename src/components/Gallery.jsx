@@ -19,7 +19,7 @@ import G10 from "../assets/GalleryImgs/G1.jpg";
 
 const Gallery1 = () => {
   return (
-    <section>
+    <section className="gallery-Section">
       <div className="">
         <div className="gallery-main-parent">
           <div className="gallery-main-div">

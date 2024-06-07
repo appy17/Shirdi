@@ -20,6 +20,7 @@ import SaileelaMag from "./pages/saileelaMag/SaileelaMag";
 import AnnualReports from "./pages/Annual Reports/AnnualReports";
 import Festival from "./pages/Festival";
 import Puja from "./pages/Puja";
+import Appeal from "./pages/Appeal";
 
 // import Regulations from "./pages/Regulations";
 
@@ -49,6 +50,7 @@ function App() {
         <Route path="/annualreports" element={<AnnualReports/>} />
         <Route path="/festival" element={<Festival/>} />
         <Route path="/pooja" element={<Puja/>} />
+        <Route path="/appeal" element={<Appeal/>} />
 
   
 

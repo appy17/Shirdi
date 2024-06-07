@@ -6,7 +6,7 @@ import Gate from "../assets/images/gate.png";
 
 const LatestNews = () => {
   return (
-    <section>
+    <section className="news-Section">
       <div className="tablewrap">
         {/* <div className="toran">
           <img src={Gate} alt="" />
@@ -17,7 +17,7 @@ const LatestNews = () => {
             data-aos="flip-left"
             data-aos-duration="2000"
           >
-            <div className="headin">
+            <div className="headin" style={{marginTop:"-11px"}}>
               <h3>Latest News</h3>
             </div>
             <div className="contains">
@@ -39,7 +39,7 @@ const LatestNews = () => {
             data-aos="flip-right"
             data-aos-duration="2000"
           >
-            <div className="headin">
+            <div className="headin" style={{marginTop:"-11px"}}>
               <h3>Appeal</h3>
             </div>
             <div className="contains ">

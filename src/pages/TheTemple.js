@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Social from '../components/social-icon/Social'
-import templeComplex from "../assets/images/templeComple.webp";
+import templeComplex from "../assets/images/temple-complex-banner.jpg";
 import templeComplex2 from "../assets/images/templeComple.jpeg";
 import TempleCard from '../components/TempleCard';
 import gurustan from '../assets/images/Gurusthan.png';

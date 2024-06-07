@@ -33,6 +33,8 @@ const Home = () => {
           <Carousel />
           <AboutSection />
           <Services />
+          {/* <LatestNews /> */}
+          {/* <DailyUpdate/> */}
           <LatestNews />
           <GalleryComponent />
           <Temples />

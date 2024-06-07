@@ -105,7 +105,7 @@ const DailyUpdate = () => {
           data-aos="fade-right"
           data-aos-duration={isMobile ? 1500 : 2500}
         >
-          <h3 style={{marginTop:"0px"}}>
+          <h3 style={{marginTop:"0px", color:"#300d0c",fontSize:"16px"}}>
             <span className="update-alram-ico">
               <IoIosAlarm />{" "}
             </span>
@@ -147,7 +147,7 @@ const DailyUpdate = () => {
           data-aos-duration={isMobile ? 1500 : 2500}
           className="update-upcoming-fest update-innerdivs"
         >
-          <h3 style={{marginTop:"0px"}}>
+          <h3 style={{marginTop:"0px",color:"#300d0c",fontSize:"16px"}}>
             <span className="update-alram-ico">
               <IoIosAlarm />
             </span>
@@ -178,7 +178,7 @@ const DailyUpdate = () => {
           data-aos-duration={isMobile ? 1500 : 2500}
           className="update-latest-update update-innerdivs"
         >
-          <h3 style={{marginTop:"0px"}}>
+          <h3 style={{marginTop:"0px", color:"#300d0c",fontSize:"16px"}}>
             <span className="update-alram-ico">
               <IoIosAlarm />
             </span>{" "}
