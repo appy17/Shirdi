@@ -143,31 +143,31 @@
             },
             {
                 "title": "Donation",
-                "path" : "/"
+                "path" : "/donation"
             },
             {
                 "title" : "Darshan",
-                "path" : "/"
+                "path" : "https://online.sai.org.in/#/darshanAvailability"
             }, 
             {
                 "title" : "SaiLeela Magazine Subscription",
-                "path" : "/"
+                "path" : "https://online.sai.org.in/#/login"
             }, 
             {
                 "title" : "Publication",
-                "path" : "/"
+                "path" : "https://online.sai.org.in/#/login"
             }, 
             {
                 "title" : "Membership",
-                "path" : "/"
+                "path" : "https://online.sai.org.in/#/login"
             },
             {
                 "title" : "Temple Registration",
-                "path" : "/"
+                "path" : "https://sai.org.in/online_services/"
             },
             {
                 "title" : "Palkhi Registration",
-                "path" : "/"
+                "path" : "https://sai.org.in/online_services/"
             },
             {
                 "title" : "Devotee Feedback",
@@ -175,7 +175,7 @@
             },
             {
                 "title" : "Vendor Registration",
-                "path" : "/"
+                "path" : "https://sai.org.in/online_services/"
             }
         ]
     },

@@ -21,6 +21,7 @@ import AnnualReports from "./pages/Annual Reports/AnnualReports";
 import Festival from "./pages/Festival";
 import Puja from "./pages/Puja";
 import Appeal from "./pages/Appeal";
+import Donation from "./pages/Donation/Donation";
 
 // import Regulations from "./pages/Regulations";
 
@@ -51,6 +52,7 @@ function App() {
         <Route path="/festival" element={<Festival/>} />
         <Route path="/pooja" element={<Puja/>} />
         <Route path="/appeal" element={<Appeal/>} />
+        <Route path="/donation" element={<Donation/>} />
 
   
 

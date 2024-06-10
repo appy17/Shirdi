@@ -32,6 +32,7 @@ const Puja = () => {
                 </div>
             </div>
 
+
             <div className='pujas'>
 
             <div class="puja-bg-gray-100 puja-px-6 puja-py-12 puja-font-sans-serif">
