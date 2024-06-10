@@ -9,6 +9,7 @@
     height: 189px;
     border-radius: 16px;
     overflow: hidden;
+    flex: 1 1 calc(20% - 16px); 
   }
 
   

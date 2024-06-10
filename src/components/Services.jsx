@@ -33,7 +33,7 @@ const Services = () => {
           <hr className="bl" />
         </p>
         <div className="ser-icons">
-          <div className="first">
+          {/* <div className="first"> */}
            <a href="https://online.sai.org.in/#/paidDarshanAvailability"> <div
               className="e-card playing"
               data-aos="fade-right"
@@ -133,9 +133,9 @@ const Services = () => {
               </div>
             </div>
             </a>
-          </div>
+          {/* </div> */}
 
-          <div className="second">
+          {/* <div className="second"> */}
            <a href="https://online.sai.org.in/#/donation"> <div
               className="e-card playing"
               data-aos="fade-up-right"
@@ -261,7 +261,7 @@ const Services = () => {
 </div> */}
 
 
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </section>
