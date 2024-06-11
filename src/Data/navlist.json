@@ -234,7 +234,7 @@
             }, 
             {
                 "title" : "Emergency Helpline",
-                "path" : "/"
+                "path" : "/helplineNo"
             }
         ]
     }

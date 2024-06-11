@@ -23,11 +23,11 @@ const Donation = () => {
                     🚩
                 </marquee>
                 <div className="about-path">
-                    <span> Home &#9654; Sai Temple &#9654; Puja
+                    <span> Home &#9654; Online Services &#9654; Donation
 </span>
                 </div>
                 <div className="places-head">
-                    <h1>Daily Ritual
+                    <h1>Donation
 </h1>
                 </div>
             </div>
@@ -36,15 +36,16 @@ const Donation = () => {
 
             <main className='Donation_main'>
         <section>
-          <h2>Various modes of Donation available:</h2>
+          <p style={{color:"rgb(0 0 0 / 70%)",fontSize:"15px"}}>    Sansthan accepts donation from devotees in various modes like Cash, Cheque, Demand Draft, Money Order, Debit/Credit Card, Foreign Currency and In-kind. Devotees can get the donation receipt, Udi Prasad and special privileges by offering donations at Sansthan Donation Counters in the Temple premises, Information Centers at 4 different cities, by post, Online portal & Android Mobile App and direct Bank to Bank transfers. Also, Devotees can donate anonymously through Donation Boxes (Hundi) in the Sansthan premises.</p>
+          <h2 style={{color:"#b15203"}}>Various modes of Donation available:</h2>
           <div className="mode">
             <h3>A) Donation Counters and Information Centers</h3>
-            <p>
+            <p style={{color:"rgb(0 0 0 / 70%)",fontSize:"15px"}}>
               Around 11 computerized Donation counters are available in Temple premises and 4 Donation counters (Information Centers) are available at Mumbai, Chennai, Hyderabad and Bangalore, for detail address of this office visit Information Centers
             </p>
             <ul>
-              <li>Donation counters accept Cash, Cheque, Demand Draft, Debit/Credit Card, Foreign Currency and kind donations.</li>
-              <li>The Donation receipts for Cash and kind donations are given immediately and for other kind of donations, the donation receipts are sent by post within 15 days.</li>
+              <li style={{color:"rgb(0 0 0 / 70%)",fontSize:"15px"}}>Donation counters accept Cash, Cheque, Demand Draft, Debit/Credit Card, Foreign Currency and kind donations.</li>
+              <li style={{color:"rgb(0 0 0 / 70%)",fontSize:"15px"}}>The Donation receipts for Cash and kind donations are given immediately and for other kind of donations, the donation receipts are sent by post within 15 days.</li>
             </ul>
             <div className="note">
               <ul>
@@ -124,7 +125,7 @@ const Donation = () => {
         </section>
 
         <section>
-          <h2>Various Donation Funds:</h2>
+          <h2 style={{color:"#b15203"}}>Various Donation Funds:</h2>
           <div className="fund-category">
             <h3>Charity/Development Fund</h3>
             <div className="fund-block border">

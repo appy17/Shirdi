@@ -22,6 +22,7 @@ import Festival from "./pages/Festival";
 import Puja from "./pages/Puja";
 import Appeal from "./pages/Appeal";
 import Donation from "./pages/Donation/Donation";
+import EmergencyHelpline from "./pages/HelplineNo/EmergencyHelpline";
 
 // import Regulations from "./pages/Regulations";
 
@@ -53,7 +54,7 @@ function App() {
         <Route path="/pooja" element={<Puja/>} />
         <Route path="/appeal" element={<Appeal/>} />
         <Route path="/donation" element={<Donation/>} />
-
+        <Route path="/helplineNo" element={<EmergencyHelpline/>} />
   
 
         
