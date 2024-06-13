@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import Social from "../../components/social-icon/Social";
-import "../Donation/Donation.css";
+import "./Donation.css"
 import pujaImage from "../../assets/images/pujaImage.jpg";
 const Donation = () => {
   return (
