@@ -43,14 +43,6 @@ body {
   margin: 0;
   background-color: #3cefef;
   background-image: linear-gradient(90deg, #5bb6b6 0%, #eba90c 100%);
-  /* background-color: white; */
-
-  /* suggested by sir */
-  /* margin: 0;
-  background-color: var(--primary-light);
-  background-image: linear-gradient(90deg, #bcd6f1 0%, #eba90c6e 100%); */
-  /* background-color: white;*/
-
 }
 
 .App {
@@ -59,7 +51,6 @@ body {
 
 .carousel {
   height: 150% !important;
-  /* width: 98.2vw; */
   width: 100%;
 }
 
@@ -117,7 +108,6 @@ body {
   position: relative;
   width: 100% !important;
   height: auto;
-  /* background: url(./assets/Brown\ and\ Beige\ Minimalist\ Aesthetic\ Twitch\ Banner\ And\ Header\ .jpg); */
   background: url(./assets/about_banner.jpg);
   background-position: bottom;
   background-size: cover;
@@ -358,7 +348,11 @@ grid-auto-rows: minmax(100px, auto);
       grid-template-columns: repeat(5, 1fr);
   }
 } */
-*/ .pooja-icon {
+
+
+
+
+ .pooja-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
