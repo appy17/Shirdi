@@ -37,7 +37,7 @@ const Appeal = () => {
      <div className="appeal_section">
     <div class="table-container">
     <table>
-        <thead>
+        <thead >
             <tr>
                 <th>No</th>
                 <th>Title</th>

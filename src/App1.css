@@ -101,10 +101,7 @@
   padding-bottom: 1rem;
 }
 
-.update-innerdivs:hover {
-  /* background: rgb(224, 101, 56);
-  box-shadow: 5px 5px 10px rgb(233, 43, 43), -5px -5px 10px rgb(233, 43, 43); */
-}
+
 
 .update-alram-ico {
   position: relative;
@@ -119,8 +116,6 @@
   background-color: orangered;
 }
  */
-.update-daily-prog {
-}
 
 .update-card {
   position: relative;
@@ -330,7 +325,7 @@
 #footer-insta-ico-a:hover i {
   transform: scale(2.2);
   background: -webkit-linear-gradient(45deg, #da214f, #da214f);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
@@ -341,7 +336,7 @@
 #footer-twit-ico-a:hover i {
   transform: scale(2.2);
   background: -webkit-linear-gradient(45deg, #192fda, #192fda);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
@@ -351,7 +346,7 @@
 #footer-face-ico-a:hover i {
   transform: scale(2.2);
   background: -webkit-linear-gradient(45deg, blue, blue);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
@@ -363,7 +358,7 @@
 #footer-youtube-ico-a:hover i {
   transform: scale(2.2);
   background: -webkit-linear-gradient(45deg, #da1919, #da1919);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
@@ -377,8 +372,7 @@
   padding-left: 10%;
   color: white;
 }
-.about-path span {
-}
+
 
 .about-info-parent {
   color: rgb(81, 79, 79);
@@ -387,10 +381,10 @@
   background-color: #f4f0ec;
 }
 
-.about-head {
-  /* text-align: center; */
+/* .about-head {
+  text-align: center;
 
-}
+} */
 .about-head h1 {
   font-size: 40px;
   width: 400px;
@@ -446,9 +440,9 @@
   font-weight: bold;
   color: white;
 }
-.about-main {
-  /* background-color: #ebeff3; */
-}
+/* .about-main {
+  background-color: #ebeff3;
+/* } */
 .about-background {
 
   position: fixed;
