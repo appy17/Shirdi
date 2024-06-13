@@ -23,7 +23,7 @@
     font-weight: 800;
 }
 
-.mode, .fund-category, .privilege {
+.mode .fund-category .privilege {
     background: #fff;
     margin: 1rem 0;
     padding-top: 1px;
@@ -36,15 +36,7 @@
     border: 2px solid transparent;
 }
 
-.mode:hover{
-    /* border: 2px solid #e2534c; */
-}
-.fund-category:hover{
-    /* border: 2px solid #e2534c; */
-}
-.privilege:hover{
-    /* border: 2px solid #e2534c; */
-}
+
 
 .mode p{
     /* font-size: 1rem; */
@@ -151,7 +143,7 @@
     margin-top: 0rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 1rem;
-    transition: background 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .button-container{
