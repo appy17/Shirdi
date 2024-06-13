@@ -78,7 +78,7 @@
   grid-template-columns: repeat(3, 1fr);
   /* background-color: red; */
   text-align: center;
-  padding: 2.5rem 2rem 0 2rem;
+  padding: 2.5rem 2rem 2.5rem 2rem;
   column-gap: 2rem;
 }
 
@@ -460,6 +460,7 @@
   background-position: center;
   z-index: -1; /* Ensure it's behind other content */
   /* background: rgba(0, 0, 0, 0.37); */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .about-gallery-div {

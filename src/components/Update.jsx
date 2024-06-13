@@ -121,7 +121,7 @@ const DailyUpdate = () => {
 
                    {dailyProgram &&
                     dailyProgram.map((data, index) => (
-                      <div key={index}>
+                      <div className="custom_text" key={index}>
                         <div className="update-main-innerdiv">
                           <div className="update-daily-timediv">
                             <h5>{data.time}</h5>
@@ -159,7 +159,7 @@ const DailyUpdate = () => {
                 <div className="update-content">
                   {upcomingFest &&
                     upcomingFest.map((item, index) => (
-                      <div key={index}>
+                      <div key={index} className="custom_text">
                         <p className="update-upcoming-fest">{item.data}</p>
 
                         <hr />
@@ -190,7 +190,7 @@ const DailyUpdate = () => {
                 <div className="update-content">
                   {latestUpdate &&
                     latestUpdate.map((item, index) => (
-                      <div key={index}>
+                      <div key={index} className="custom_text">
                         <p>
                           <a href={item.hyperlink}>{item.data}</a>
                         </p>

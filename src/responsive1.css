@@ -104,10 +104,14 @@
    
     padding: 3px 9px;
     margin: 15px 19px;
+    font-size: 15px;
   
 }
 .contains ul {
   margin-top: 10px;
+}
+.down-btn{
+  right: -5%;
 }
 /* .contains {
 
@@ -119,9 +123,17 @@
 .update-main-div {
 
   padding: 0.5rem 1rem 0 2rem;
+  /* margin-right: 5%; */
 
 }
 
+
+}
+
+@media only screen and (max-width: 480px) {
+  .update-main-div {
+    padding: 0.5rem; /* Further adjust padding */
+  }
 }
 
 

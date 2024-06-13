@@ -54,7 +54,7 @@
             }, 
             {
                 "title" : "How to reach Shirdi",
-                "path" : "/"
+                "path" : "/howtoreach"
             }, 
             {
                 "title" : "Pooja",
@@ -77,7 +77,7 @@
             },
             {
                 "title": "Notice",
-                "path" : "/"
+                "path" : "/notice"
             },
             {
                 "title" : "Photo Gallery",
@@ -97,7 +97,7 @@
             },
             {
                 "title" : "Recruitment",
-                "path" : "/"
+                "path" : "/recruitment"
             }
         ]
     },
@@ -139,7 +139,7 @@
         "children": [
             {
                 "title": "Accommodation Booking",
-                "path" : "/"
+                "path" : "/accomodation"
             },
             {
                 "title": "Donation",

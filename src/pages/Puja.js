@@ -51,7 +51,7 @@ const Puja = () => {
           <li>Puja materials: The participant does not need to bring any materials for the Puja as they are provided by the organization. After the completion of the Puja, as Prasad, participants receive a coconut and a Shiraprasad (sweet offering) from the organization.</li>
         </ul>
         <div class="puja-link-container">
-        <button class="custom-btn btn-2">Book Now</button>
+        <a href='https://online.sai.org.in/#/satyanarayanaPooja'><button class="custom-btn btn-2">Book Now</button></a>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@ const Puja = () => {
           <li>Puja materials: The participant does not need to bring any materials for the Puja as they are provided by the organization. After the completion of the Puja, as Prasad, participants receive a packet of Ladoo (a sweet delicacy) and a coconut from the organization.</li>
         </ul>
         <div class="puja-link-container">
-        <button class="custom-btn btn-2">Book Now</button>
+       <a href='https://online.sai.org.in/#/satyanarayanaPooja'> <button class="custom-btn btn-2">Book Now</button></a>
         </div>
       </div>
     </div>
@@ -95,7 +95,7 @@ const Puja = () => {
           
         </ul>
         <div class="puja-link-container">
-        <button class="custom-btn btn-2">Book Now</button>
+       <a href='https://online.sai.org.in/#/satyanarayanaPooja'> <button class="custom-btn btn-2">Book Now</button></a> 
         </div>
       </div>
     </div>
