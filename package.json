@@ -9,6 +9,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
+    "build": "^0.1.4",
     "embla-carousel-autoplay": "^8.0.0",
     "embla-carousel-react": "^8.0.0",
     "framer-motion": "^11.2.0",
@@ -50,8 +51,8 @@
     ]
   },
   "devDependencies": {
-    "stylelint": "^16.6.1",
     "@babel/plugin-proposal-private-property-in-object": "^7.x.x",
+    "stylelint": "^16.6.1",
     "stylelint-config-standard": "^36.0.0"
   }
 }
