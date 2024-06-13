@@ -17,7 +17,7 @@ const Donation = () => {
       <div>
         <marquee behavior="" direction="">
           🚩
-          <span className="about-marquee">
+          <span className="about-marquee" style={{color: 'white'}}>
             Shri Saibaba Sansthan Trust, Shirdi
           </span>
           🚩
