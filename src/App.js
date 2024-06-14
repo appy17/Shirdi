@@ -4,7 +4,7 @@ import "./responsive1.css";
 import "./App1.css";
 import "./responsivetab1.css";
 // import Aos from "aos";
-import { Route, Routes , Navigate} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import DailyProgram from "./pages/dailyprogram/DailyProgram";
@@ -26,14 +26,9 @@ import EmergencyHelpline from "./pages/HelplineNo/EmergencyHelpline";
 import Notice from "./pages/Notice/Notice";
 import Recruitment from "./pages/Recruitment/Recruitment";
 import Layout from "./pages/Accomodation/Layout";
-import Non from "./pages/Accomodation/non";
-import Acc from "./pages/Accomodation/acc";
-import General from "./pages/Accomodation/general";
-import Reach_layout from "./pages/How_To_Reach/Reach_layout"
-import Bus from "./pages/How_To_Reach/bus";
-import Arrival from "./pages/How_To_Reach/arrivals";
-import Train from "./pages/How_To_Reach/train";
-import Air from "./pages/How_To_Reach/air";
+import Reach_layout from "./pages/How_To_Reach/Reach_layout";
+import BookTable from "./pages/BookTable/BookTable";
+
 
 // import Regulations from "./pages/Regulations";
 
@@ -71,38 +66,10 @@ function App() {
 
         
         <Route path="/accomodation" element={<Layout />} />
-        <Route
-          path="/non-ac"
-          element={
-            <Layout>
-              <Non />
-            </Layout>
-          }
-        />
-
-        <Route
-          path="/general"
-          element={
-            <Layout>
-              <General  />
-            </Layout>
-          }
-        />
-     <Route path="" element={<Navigate to="/general" />} />
-
-        <Route
-          path="/ac"
-          element={
-            <Layout>
-              <Acc />
-            </Layout>
-          }
-        />
          <Route path="/howtoreach" element={<Reach_layout/>}/>
-      <Route path="/bus" element={<Reach_layout><Bus/></Reach_layout>}/>
-      <Route path="/air" element={<Reach_layout><Air/></Reach_layout>}/>
-      <Route path="/arrival" element={<Reach_layout><Arrival/></Reach_layout>}/>
-      <Route path="/train" element={<Reach_layout><Train/></Reach_layout>}/>
+         <Route path="/pricelist" element={<BookTable/>}/>
+
+    
 
       </Routes>
     </div>

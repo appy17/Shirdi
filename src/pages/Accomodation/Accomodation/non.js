@@ -121,27 +121,27 @@ const Non = () => {
       <table>
         <thead>
           <tr>
-            <th>No.</th>
-            <th>Location Name</th>
-            <th>Room Type</th>
-            <th>Room Description</th>
-            <th>Min Cap</th>
-            <th>Max Cap</th>
-            <th>Rate per Day ( ₹ )</th>
-            <th>Remark</th>
+            <th className='.th'>No.</th>
+            <th className='.th'>Location Name</th>
+            <th className='.th'>Room Type</th>
+            <th className='.th'>Room Description</th>
+            <th className='.th'>Min Cap</th>
+            <th className='.th'>Max Cap</th>
+            <th className='.th'>Rate per Day ( ₹ )</th>
+            <th className='.th'>Remark</th>
           </tr>
         </thead>
         <tbody>
           {data.map((item, index) => (
             <tr key={index}>
-              <td data-label="No.">{item.no}</td>
-              <td data-label="Location Name">{item.location}</td>
-              <td data-label="Room Type">{item.roomType}</td>
-              <td data-label="Room Description">{item.roomDescription}</td>
-              <td data-label="Min Cap">{item.minCap}</td>
-              <td data-label="Max Cap">{item.maxCap}</td>
-              <td data-label="Rate per Day ( ₹ )">{item.ratePerDay}</td>
-              <td data-label="Remark">{item.remark}</td>
+              <td className='.td' data-label="No.">{item.no}</td>
+              <td className='.td' data-label="Location Name">{item.location}</td>
+              <td className='.td' data-label="Room Type">{item.roomType}</td>
+              <td className='.td' data-label="Room Description">{item.roomDescription}</td>
+              <td className='.td' data-label="Min Cap">{item.minCap}</td>
+              <td className='.td' data-label="Max Cap">{item.maxCap}</td>
+              <td className='.td' data-label="Rate per Day ( ₹ )">{item.ratePerDay}</td>
+              <td className='.td' data-label="Remark">{item.remark}</td>
             </tr>
           ))}
         </tbody>

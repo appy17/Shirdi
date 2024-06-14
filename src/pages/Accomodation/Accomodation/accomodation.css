@@ -1,8 +1,4 @@
 
-.how-to-reach-section{
-  background: #ddd;
-}
-
 .Ac_App{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     padding: 25px;
@@ -207,6 +203,7 @@
   .General_carousel img {
     width: 100%;
     display: none;
+    height:400px;
     border-radius: 0 0 12px 12px;
   }
   
@@ -289,6 +286,13 @@
     overflow: hidden;
   }
   
+  @media all and (max-width: 767px) {
+    .General_carousel img {
+      height:300px; 
+    }
+   
+  }
+  
   
   /* ///////////////////// */
   
@@ -321,6 +325,7 @@
   
   
   
+  /* /////////tables//////////////// */
    .container {
     max-width: 1200px;
     margin-left: auto;
@@ -558,7 +563,7 @@
     font-size: 14px;
     cursor: pointer;
     border-radius: 0px; 
-    transition:0.5s; 
+    transition: background 0.5s; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
   }
   

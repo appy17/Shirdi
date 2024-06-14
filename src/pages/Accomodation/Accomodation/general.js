@@ -173,36 +173,36 @@ function General() {
       <table className="General_responsive-table">
         <thead>
           <tr>
-            <th>Location Name</th>
-            <th>No.</th>
-            <th>Room Type</th>
-            <th>Room Images</th>
-            <th>Room Description</th>
-            <th>Min Cap</th>
-            <th>Max Cap</th>
-            <th>Rate per day(₹)</th>
-            <th>Remark</th>
+            <th className='.th'>Location Name</th>
+            <th className='.th'>No.</th>
+            <th className='.th'>Room Type</th>
+            <th className='.th'>Room Images</th>
+            <th className='.th'>Room Description</th>
+            <th className='.th'>Min Cap</th>
+            <th className='.th'>Max Cap</th>
+            <th className='.th'>Rate per day(₹)</th>
+            <th className='.th'>Remark</th>
           </tr>
         </thead>
         <tbody>
           {data.map((location, locIndex) => (
             location.rooms.map((room, roomIndex) => (
               <tr key={`${locIndex}-${roomIndex}`}>
-                <td data-label="Location Name">{roomIndex === 0 ? location.locationName : ''}</td>
-                <td data-label="No.">{room.no}</td>
-                <td data-label="Room Type">{room.roomType}</td>
-                <td data-label="Room Images">
+                <td className='.td' data-label="Location Name">{roomIndex === 0 ? location.locationName : ''}</td>
+                <td className='.td' data-label="No.">{room.no}</td>
+                <td className='.td'data-label="Room Type">{room.roomType}</td>
+                <td className='.td' data-label="Room Images">
                 {room.roomImages === "View Room" && (
-                    <button onClick={() => handleButtonClick(room.images)}>{room.roomImages}</button>
+                    <button className='Img' onClick={() => handleButtonClick(room.images)}>{room.roomImages}</button>
                   )}
                 </td>
 
                
-                <td data-label="Room Description">{room.roomDescription}</td>
-                <td data-label="Min Cap">{room.minCap}</td>
-                <td data-label="Max Cap">{room.maxCap}</td>
-                <td data-label="Rate per day(₹)">{room.rate}</td>
-                <td data-label="Remark">{room.remark}</td>
+                <td className='.td' data-label="Room Description">{room.roomDescription}</td>
+                <td className='.td' data-label="Min Cap">{room.minCap}</td>
+                <td className='.td' data-label="Max Cap">{room.maxCap}</td>
+                <td className='.td' data-label="Rate per day(₹)">{room.rate}</td>
+                <td className='.td' data-label="Remark">{room.remark}</td>
               </tr>
             ))
           ))}
@@ -211,7 +211,7 @@ function General() {
             <>
               <div className=" General_overlay" onClick={closeCarousel}></div>
               <div className=" General_carousel">
-                <div className="General_carousel-header">Check your rooms</div>
+                <div className="General_carousel-header">Check Your Rooms</div>
                 <span className="General_cancel" onClick={closeCarousel}>&times;</span>
                 <span className="General_prev" onClick={() => showSlide(-1)}>&#10094;</span>
                 <span className="General_next" onClick={() => showSlide(1)}>&#10095;</span>

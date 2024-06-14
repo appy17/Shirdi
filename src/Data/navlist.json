@@ -120,7 +120,7 @@
             }, 
             {
                 "title" : "Price List",
-                "path" : "/"
+                "path" : "/pricelist"
             }, 
             {
                 "title" : "Video",

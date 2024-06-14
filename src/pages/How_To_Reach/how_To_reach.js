@@ -1,68 +1,72 @@
 import React, { useState } from 'react';
-import { Routes, Route, Link, Navigate } from "react-router-dom";
 import './howtoreach.css';
-import Bus from "./bus";
-import Train from "./train";
-import Air from "./air";
-import Arrival from "./arrivals";
-import { FaBusAlt } from "react-icons/fa";
-import { FaTrain } from "react-icons/fa6";
-import { ImAirplane } from "react-icons/im";
+import Bus from './bus';
+import Train from './train';
+import Air from './air';
+import Arrival from './arrivals';
+import { FaBusAlt, FaTrain } from 'react-icons/fa';
+import { ImAirplane } from 'react-icons/im';
 
 function HowToreach() {
-    const [activeButton, setActiveButton] = useState("bus");
+  const [activeButton, setActiveButton] = useState('bus'); // State to track active button
 
-    const handleClick = (buttonName) => {
-      setActiveButton(buttonName);
-    };
-  
-    return (
-      <div className="How_container margin">
-        <div className="How_menu">
-          <Link
-            to="/bus"
-            className={`How_menu-link ${activeButton === "bus" ? "active" : ""}`}
-          >
-            <button
-              className={`How_menu-button ${activeButton === "bus" ? "active" : ""}`}
-              onClick={() => handleClick("bus")}
-            >
-              <FaBusAlt /> Bus
-            </button>
-          </Link>
-          <Link
-            to="/train"
-            className={`How_menu-link ${activeButton === "train" ? "active" : ""}`}
-          >
-            <button
-              className={`How_menu-button ${activeButton === "train" ? "active" : ""}`}
-              onClick={() => handleClick("train")}
-            >
-              <FaTrain /> Train
-            </button>
-          </Link>
-          <Link
-            to="/air"
-            className={`How_menu-link ${activeButton === "air" ? "active" : ""}`}
-          >
-            <button
-              className={`How_menu-button ${activeButton === "air" ? "active" : ""}`}
-              onClick={() => handleClick("air")}
-            >
-              <ImAirplane /> Air
-            </button>
-          </Link>
-        </div>
-  
-        <Routes>
-          {/* <Route path="/" element={<Navigate to="/bus" />} /> */}
-          <Route path="/bus" element={<Bus />} />
-          <Route path="/train" element={<Train />} />
-          <Route path="/air" element={<Air />} />
-          <Route path="/arrival" element={<Arrival />} />
-        </Routes>
+  const handleClick = (buttonName) => {
+    setActiveButton(buttonName); // Update active button state on click
+  };
+
+  let activeComponent;
+
+  switch (activeButton) {
+    case 'bus':
+      activeComponent = <Bus />;
+      break;
+    case 'train':
+      activeComponent = <Train />;
+      break;
+    case 'air':
+      activeComponent = <Air />;
+      break;
+    case 'arrival':
+      activeComponent = <Arrival />;
+      break;
+    default:
+      activeComponent = <Bus />; // Default to Bus component
+  }
+
+  return (
+    <div className="How_container margin">
+      <div className="How_menu">
+        {/* Bus Button */}
+        <button
+          className={`How_menu-button ${activeButton === 'bus' ? 'active' : ''}`}
+          onClick={() => handleClick('bus')}
+        >
+          <FaBusAlt /> Bus
+        </button>
+
+        {/* Train Button */}
+        <button
+          className={`How_menu-button ${activeButton === 'train' ? 'active' : ''}`}
+          onClick={() => handleClick('train')}
+        >
+          <FaTrain /> Train
+        </button>
+
+        {/* Air Button */}
+        <button
+          className={`How_menu-button ${activeButton === 'air' ? 'active' : ''}`}
+          onClick={() => handleClick('air')}
+        >
+          <ImAirplane /> Air
+        </button>
       </div>
-    );
+
+      {/* Display Active Component */}
+      <div className="ActiveComponent">
+        {activeComponent}
+      </div>
+    </div>
+  );
 }
 
 export default HowToreach;

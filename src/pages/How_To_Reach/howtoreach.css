@@ -1,105 +1,101 @@
+/* //////////Bus CSS Start////////// */
+
 .bus_heading {
-    margin-left: 20px;
-    margin-top: 30px;
-    color: #bc630b;
-  }
-  .bus_container p{
-    margin-left: 20px;
-  }
-  
-  /* .bus-content {
-    margin-left: 20px;
-    color: #666;
-    font-size: 1rem;
-    margin-bottom: 20px;
-  } */
-  
-  .bus-active {
-    background-color: #F1B04C; /* Change to the active color */
-  }
-  
-  .bus-active .bus_heading,
-  .bus-active .bus-content {
-    color: #fff; /* Change text color to white for visibility */
-  }
-  
-  .bus_container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-  }
-  
-  .h2 {
-    font-size: 26px;
-    margin: 20px 0;
-    text-align: center;
-    color: #333;
-  }
-  
-  .bus_responsive-table {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .bus_responsive-table li {
-    border-radius: 3px;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    background-color: #fff;
-    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-  }
-  
+  margin-left: 20px;
+  margin-top: 30px;
+  color: #bc630b;
+}
+
+.bus_container p{
+  margin-left: 20px;
+}
+ 
+.bus-active {
+  background-color: #F1B04C; /* Change to the active color */
+}
+
+.bus-active .bus_heading,
+.bus-active .bus-content {
+  color: #fff; /* Change text color to white for visibility */
+}
+
+.bus_container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+  color: #333;
+}
+
+.bus_responsive-table {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bus_responsive-table li {
+  border-radius: 3px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.bus_responsive-table .bus_table-header {
+  background-color: #bc630b;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bus_responsive-table .col {
+  flex: 1;
+  padding: 5px 10px;
+  text-align: left; /* Align content to the left */
+}
+
+@media all and (max-width: 767px) {
   .bus_responsive-table .bus_table-header {
-    background-color: #bc630b;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .bus_responsive-table .col {
-    flex: 1;
-    padding: 5px 10px;
-    text-align: center;
-  }
-  @media all and (max-width: 767px) {
-    .bus_responsive-table .bus_table-header {
       display: none;
-    }
-  
-    .bus_responsive-table li {
+  }
+
+  .bus_responsive-table li {
       display: block;
       padding: 10px 15px;
-    }
-  
-    .bus_responsive-table .col {
+  }
+
+  .bus_responsive-table .col {
       flex-basis: 100%;
       display: flex;
       padding: 10px 0;
-    }
-  
-    .bus_responsive-table .col:before {
+      text-align: left; /* Ensure text is left-aligned on small screens */
+  }
+
+  .bus_responsive-table .col:before {
       color: #F1B04C;
       padding-right: 5px;
       content: attr(data-label) ":";
       flex-basis: 50%;
       text-align: right;
-    }
   }
+}
 
+/* //////////Bus CSS End////////// */
 
-   /* //////////Bus end ////////// */
-
-/* //////////////Train Start//////////// */
-
+/* //////////Train CSS Start////////// */
 
 .train_container {
   max-width: 1200px;
@@ -107,14 +103,9 @@
   margin-right: auto;
   padding: 20px;
 }
-.h1{
+
+.h1 {
   color: #bc630b;
-}
-.h2 {
-  font-size: 26px;
-  margin: 20px 0;
-  text-align: center;
-  color: #333;
 }
 
 .train_responsive-table {
@@ -148,15 +139,15 @@
 .train_responsive-table .col {
   flex: 1;
   padding: 5px 10px;
-  text-align: center;
+  text-align: left; /* Align content to the left */
 }
+
 .train_station-info {
   margin-bottom: 20px;
 }
 
 .train_station-info .h2 {
   color: #333;
-
 }
 
 .train_station-details {
@@ -177,168 +168,155 @@
 .train_train-list .h2 {
   color: #333;
 }
-   @media all and (max-width: 767px) {
-    .train_responsive-table .train_table-header {
-      display: none;
-    }
-  
-    .train_responsive-table li {
-      display: block;
-      padding: 10px 15px;
-    }
-  
-    .train_responsive-table .col {
-      flex-basis: 100%;
-      display: flex;
-      padding: 10px 0;
-    }
-  
-    .train_esponsive-table .col:before {
-      color: #F1B04C;
-      padding-right: 5px;
-      content: attr(data-label) ":";
-      flex-basis: 50%;
-      text-align: right;
-    }
-  }
 
-  /* ////////////Train end ////////// */
-
-  /* //////////Air css////////// */
-
-
-  .Air_container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-  }
-  
-  .h2 {
-    font-size: 26px;
-    margin: 20px 0;
-    text-align: center;
-    color: #333;
-  }
-  
-  .Air_responsive-table {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .Air_responsive-table li {
-    border-radius: 3px;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    background-color: #fff;
-    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
-  }
-  
-  .Air_responsive-table .Air_table-header {
-    background-color: #bc630b;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .Air_responsive-table .Air_col {
-    flex: 1;
-    padding: 5px 10px;
-    text-align: center;
-  }
-
-  .Air_menu {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .Air_menu-link {
-    text-decoration: none;
-  }
-  
-  .Air_menu-button {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    padding: 15px 30px;
-    margin: 0 10px;
-    border: none; /* Remove border */
-    border-radius: 0; /* Make button rectangular */
-    background-color: #bc630b;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    font-size: 1.2rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .Air_menu-button:hover {
-    background-color: #d27c25;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  }
-  
-  .Air_menu-button.active {
-    background-color: orange;
-  }
-  
-  /* Media query for responsiveness */
-  @media screen and (max-width: 768px) {
-    .Air_menu-button {
-      width: 80%;
-      font-size: 1rem; /* Adjust font size for smaller screens */
-    }
-  }
-  
 @media all and (max-width: 767px) {
-    .Air_responsive-table .Air_table-header {
+  .train_responsive-table .train_table-header {
       display: none;
-    }
-  
-    .Air_responsive-table li {
+  }
+
+  .train_responsive-table li {
       display: block;
       padding: 10px 15px;
-    }
-  
-    .Air_responsive-table .Air_col {
+  }
+
+  .train_responsive-table .col {
       flex-basis: 100%;
       display: flex;
       padding: 10px 0;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .Air_responsive-table .Air_col:before {
+      text-align: left; /* Ensure text is left-aligned on small screens */
+  }
+
+  .train_responsive-table .col:before {
       color: #bc630b;
       padding-right: 10px;
       content: attr(data-label)":";
       flex-basis: 50%;
       text-align: right;
-    }
   }
-  
-/* //////////// Air End /////////// */
+}
 
- /* //////////////Arrival start ////////// */
+/* //////////Train CSS End////////// */
 
- .Arrival_container {
+/* //////////Air CSS Start////////// */
+
+.Air_container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
 }
 
-.h2 {
-  font-size: 26px;
-  margin: 20px 0;
-  text-align: center;
-  color: #333;
+.Air_responsive-table {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Air_responsive-table li {
+  border-radius: 3px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.Air_responsive-table .Air_table-header {
+  background-color: #bc630b;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Air_responsive-table .Air_col {
+  flex: 1;
+  padding: 5px 10px;
+  text-align: left; /* Align content to the left */
+}
+
+.Air_menu {
+  display: flex;
+  justify-content: center;
+}
+
+.Air_menu-link {
+  text-decoration: none;
+}
+
+.Air_menu-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 30px;
+  margin: 0 10px;
+  border: none; /* Remove border */
+  border-radius: 0; /* Make button rectangular */
+  background-color: #bc630b;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Air_menu-button:hover {
+  background-color: #d27c25;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Air_menu-button.active {
+  background-color: orange;
+}
+
+@media screen and (max-width: 768px) {
+  .Air_menu-button {
+      width: 80%;
+      font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media all and (max-width: 767px) {
+  .Air_responsive-table .Air_table-header {
+      display: none;
+  }
+
+  .Air_responsive-table li {
+      display: block;
+      padding: 10px 15px;
+  }
+
+  .Air_responsive-table .Air_col {
+      flex-basis: 100%;
+      display: flex;
+      padding: 10px 0;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left; /* Ensure text is left-aligned on small screens */
+  }
+
+  .Air_responsive-table .Air_col:before {
+      color: #bc630b;
+      padding-right: 10px;
+      content: attr(data-label)":";
+      flex-basis: 50%;
+      text-align: right;
+  }
+}
+
+/* //////////Air CSS End////////// */
+
+/* //////////Arrival CSS Start////////// */
+
+.Arrival_container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
 }
 
 .Arrival_responsive-table {
@@ -372,82 +350,80 @@
 .Arrival_responsive-table .col {
   flex: 1;
   padding: 5px 10px;
-  text-align: center;
+  text-align: left; /* Align content to the left */
 }
 
-  .Arrival_menu {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .Arrival_menu-link {
-    text-decoration: none;
-  }
-  
-  .Arrival_menu-button {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    padding: 15px 30px;
-    margin: 0 10px;
-    border: none; /* Remove border */
-    border-radius: 0; /* Make button rectangular */
-    background-color: #bc630b;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    font-size: 1.2rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .Arrival_menu-button:hover {
-    background-color: #d27c25;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  }
-  
-  .Arrival_menu-button.active {
-    background-color: orange;
-  } 
+.Arrival_menu {
+  display: flex;
+  justify-content: center;
+}
 
-/* Media query for responsiveness */
+.Arrival_menu-link {
+  text-decoration: none;
+}
+
+.Arrival_menu-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 30px;
+  margin: 0 10px;
+  border: none; /* Remove border */
+  border-radius: 0; /* Make button rectangular */
+  background-color: #bc630b;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Arrival_menu-button:hover {
+  background-color: #d27c25;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Arrival_menu-button.active {
+  background-color: orange;
+}
+
 @media screen and (max-width: 768px) {
   .Arrival_menu-button {
-    width: 80%;
-    font-size: 1rem; /* Adjust font size for smaller screens */
+      width: 80%;
+      font-size: 1rem; /* Adjust font size for smaller screens */
   }
 }
 
 @media all and (max-width: 767px) {
   .Arrival_responsive-table .Arrival_table-header {
-    display: none;
+      display: none;
   }
 
   .Arrival_responsive-table li {
-    display: block;
-    padding: 10px 15px;
+      display: block;
+      padding: 10px 15px;
   }
 
   .Arrival_responsive-table .col {
-    flex-basis: 100%;
-    display: flex;
-    padding: 10px 0;
-    justify-content: space-between;
-    align-items: center;
+      flex-basis: 100%;
+      display: flex;
+      padding: 10px 0;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left; /* Ensure text is left-aligned on small screens */
   }
 
   .Arrival_responsive-table .col:before {
-    color: #bc630b;
-    padding-right: 10px;
-    content: attr(data-label)":" ;
-  flex-basis: 50%;
-    text-align: right;
+      color: #bc630b;
+      padding-right: 10px;
+      content: attr(data-label)":";
+      flex-basis: 50%;
+      text-align: right;
   }
 }
 
+/* //////////Arrival CSS End////////// */
 
-/* ////////////////Arrival close////////////// */
-
-
-/* ///////////////HOW_To_Reach ////////////////// */
+/* //////////HOW_To_Reach CSS Start////////// */
 
 .How_menu {
   display: flex;
@@ -482,7 +458,15 @@
   background-color: orange;
 }
 
-
-.margin{
-  margin-top: 20px;
+.margin {
+  margin-top: 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .How_menu-button {
+      width: 80%;
+      font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* //////////HOW_To_Reach CSS End////////// */

@@ -1,42 +1,15 @@
 import React from 'react'
-import Accomodation from './accomodation'
-import CardFlip from './flipcard'
+import Accomodation from './Accomodation/accomodation'
+import CardFlip from './Accomodation/flipcard'
 import Navbar from '../../components/Navbar'
 import Social from '../../components/social-icon/Social'
 import Footer from '../../components/Footer'
-// import how_to_reach from "../../assets/images/how-to-reach-banner.jpg"
-import how_to_reach from "../../assets/images/train_11.webp";
+
 function Layout({children}) {
   return (
    <>
     <Navbar/>
     <Social/>
-     
-  
- 
-    <div
-                className="about-background"
-                style={{ backgroundImage: `url(${how_to_reach})` }}
-            ></div>
-            <div>
-                <marquee behavior="" direction="">
-                    🚩
-                    <span className="about-marquee">
-                        Shri Saibaba Sansthan Trust, Shirdi
-                    </span>
-                    🚩
-                </marquee>
-                <div className="about-path">
-                    <span> Home &#9654; Sai Temple &#9654; Puja
-</span>
-                </div>
-                <div className="places-head">
-                    <h1>Daily Ritual
-</h1>
-                </div>
-            </div>
-
-            <div className='how-to-reach-section'>
 <CardFlip/>
 <Accomodation/>
 {children}
@@ -60,7 +33,6 @@ function Layout({children}) {
     <li class="notice-point">Hot water will be available from 3.00 a.m. to the time till hot water is available.</li>
     <li class="notice-point">Sai devotees having any suggestions/complaints regarding this can contact us at email - saibaba@sai.org.in / support@sai.org.in Telephone- 02423-258956/258963.</li>
   </ol>
-</div>
 </div>
 <Footer/>
    </>

@@ -13,7 +13,7 @@ const Bus = () => {
       </p>
 
       <div className="bus_container">
-        <h2>Bus Time Table</h2>
+        {/* <h2>Bus Time Table</h2> */}
         <ul className="bus_responsive-table">
           <li className="bus_table-header">
             <div className="col col-1">NO.</div>

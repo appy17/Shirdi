@@ -22,7 +22,7 @@ const Train = () => {
 <div className="train_train-list">
   <h4>List of Trains Starting From and Passing Through Sainagar Shirdi (SNSI), SAINAGAR SHIRDI Railway Station:</h4>
   </div>
-      <h2 class="h2">Train Time Table</h2>
+      {/* <h2 class="h2">Train Time Table</h2> */}
       <ul className="train_responsive-table">
         <li className="train_table-header">
           <div className="col col-1">No.</div>

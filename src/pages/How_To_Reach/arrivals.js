@@ -9,21 +9,8 @@ import { Link } from "react-router-dom";
 const Arrival = () => {
   return (
     <div className="Arrival_container">
-      <div className="Arrival_menu">
-        <Link to="/air" className={`Arrival_menu-link `}>
-          <button className={`Arrival_menu-button `}>
-            <ImAirplane />
-            Departure
-          </button>
-        </Link>
-        <Link to="/arrival" className={`Arrival_menu-link `}>
-          <button className={`Arrival_menu-button `}>
-            <ImAirplane /> Arrivals
-          </button>
-        </Link>
-      </div>
-
-      <h2>Arrival </h2>
+ 
+      {/* <h2>Arrivals</h2> */}
       <ul className="Arrival_responsive-table">
         <li className="Arrival_table-header">
           <div className="col">Flight</div>
