@@ -1,6 +1,6 @@
 .menu {
     position: fixed;
-    transform: translate(0%, 70%);
+    transform: translate(0%, 60%);
     z-index: 1111;
     height: 100%;
   }
@@ -112,7 +112,6 @@
    .don {
     background: transparent;
     position: absolute;
-    position: absolute;
     transform: translate(50px, 15px);
     color: white !important;
     z-index: 0;
@@ -122,3 +121,23 @@
     border-radius: 10px;
 
    }
+
+
+   .music_menu {
+    position: fixed;
+    transform: translate(0%, 20%);
+    z-index: 1111;
+    height: 100%;
+  }
+  
+  .music_menu a {
+    position: absolute;
+    background-color: rgb(197 123 31) !important;
+    border: 3px solid white;
+    display: flex;
+    color:white;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    padding: 14px 14px;
+  }
