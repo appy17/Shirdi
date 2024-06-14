@@ -60,7 +60,7 @@ const Carousel = () => {
               Office of Shree Saibaba Sansthan in Temple premises at Shirdi and
               obtain an official receipt. Donations can also be done through the
               official website{" "}
-              <a href="#" className="carousel-a-tag">
+              <a href="https://online.sai.org.in/#/login" className="carousel-a-tag">
                 <span className="blink">https://online.sai.org.in </span>
               </a>
               , and obtain an online receipt. These donations will reach Shree
@@ -75,7 +75,7 @@ const Carousel = () => {
           >
             <p>
               Application for Sai Seva at Shri Saibaba Temple, Shirdi{" "}
-              <a href="#" className="carousel-a-tag">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYDadqpTqOloHleqQyUbNOoMIX8Usi6jw6eMPAf4jymarghg/viewform" className="carousel-a-tag">
                 {" "}
                 <span className="blink">Click here to apply</span>
               </a>
@@ -107,7 +107,7 @@ const Carousel = () => {
               Live Darshan is illegal and false and they and their sponsors are
               liable for legal action. For Real Time Official Live Darshan of
               Shree Sai Baba Samadhi Mandir, Shirdi{" "}
-              <a href="#" className="carousel-a-tag">
+              <a href="https://sai.org.in/node/504?width=960&height=540&iframe=true" className="carousel-a-tag">
                 <span className="blink">Click here</span>
               </a>
               .

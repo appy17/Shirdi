@@ -65,7 +65,7 @@ const AboutSection = () => {
         <div
           className="image-div"
           data-aos="fade-right"
-          data-aos-duration="1500"
+          data-aos-duration="1500" 
         >
           <img src={Spin} alt="" width={550} className="bg" />
           <img src={Sai} alt="" className="sai" />
