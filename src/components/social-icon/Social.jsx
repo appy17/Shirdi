@@ -3,7 +3,7 @@ import "./Menu.css"; // Import your CSS file
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaPlay, FaPause } from "react-icons/fa";
 import { BiSolidMessageSquareAdd } from "react-icons/bi";
 import Donate from "../../assets/images/donationsai.png";
-import backgroundMusic from "../../../src/audio/108_namavali.mp3";
+import backgroundMusic from "../../../src/audio/Om_Shri_Sai_Nathay_Namah.mp3";
 
 const Social = () => {
   const [isMenuVisible, setMenuVisible] = useState(true);
