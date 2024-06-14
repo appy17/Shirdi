@@ -169,7 +169,7 @@ function General() {
 
   return (
     <div className="Ac_App">
-      <h1 className='General_h1'>ROOMS AVAILABLE FOR BOOKING IN SHIRDI ON COUNTER OF EACH BUILDING.</h1>
+      <h1 className='General_h1'>ROOMS AVAILABLE FOR BOOKING IN SHIRDI ON COUNTER OF EACH BUILDING</h1>
       <table className="General_responsive-table">
         <thead>
           <tr>

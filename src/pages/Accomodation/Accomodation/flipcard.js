@@ -44,7 +44,7 @@ const CardFlip = () => {
   return (
     <div className="CardFlip_content">
   
-      <h1 className="CardFlip_heading">Shri Saibaba Sansthan Trust, Shirdi Accommodation live availability as of time today <a className="link" href="#">Click Here</a></h1>
+      <h1 className="CardFlip_heading">Shri Saibaba Sansthan Trust, Shirdi Accommodation live availability as of time today <a className="link" href="http://103.21.67.21:90/room-availability"><span>Click Here</span></a></h1>
       <p className="CardFlip_description">Shri Saibaba Sansthan, Shirdi offers various accommodation options such as Sai Ashram, Dwarawati, and New Bhakta Niwas which provides a pleasant stay at affordable prices. Book your stay online from below links.</p>
       {cards.map((card, index) => (
         <div 

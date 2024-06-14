@@ -3,6 +3,11 @@
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+  
+}
+.priceList{
+  background: #fff;
+  padding-top: 3%;
 }
 
 .BookTable_responsive-table {
@@ -14,7 +19,7 @@
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #333;
+  color: #bc630b;
 }
 
 .BookTable_subheading {

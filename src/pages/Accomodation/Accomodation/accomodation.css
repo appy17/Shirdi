@@ -1,4 +1,8 @@
+.accomodation{
+  background: #F4F0EC;
+  margin-top: 3%;
 
+}
 .Ac_App{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     padding: 25px;
@@ -24,12 +28,16 @@
     animation: fadeInUp 1s ease;
     width: 100%; /* Make table width 100% */
   }
+  tr{
+    background-color: white;
+  }
   
   th,
   td {
     padding: 12px;
     text-align: left;
     transition: background-color 0.3s ease;
+    /* background-color: white; */
   }
   
   th {
@@ -54,7 +62,7 @@
     background-color: #f9f9f9;
   }
   
-  button {
+  .Ac_App button {
     background: linear-gradient(135deg, #ff8c00, #bc630b);
     color: white;
     border: none;
@@ -66,7 +74,8 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  button:hover {
+ 
+  .Ac_App button:hover {
     background: linear-gradient(135deg, #bc630b, #a3520a);
     transform: scale(1.05);
   }
@@ -79,10 +88,13 @@
     td,
     tr {
       display: block;
+      
+
     }
   
     thead tr {
       display: none;
+
     }
   
     tr {
@@ -92,6 +104,7 @@
       border-radius: 12px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       animation: fadeInUp 0.3s ease;
+      /* background-color: white; */
     }
   
     td {
@@ -119,7 +132,8 @@
       text-align: right;
     }
   
-    td[data-label='Room Images'] button {
+    td[data-label='Room Images'] 
+    .Ac_App button {
       width: 50%;
       height:50%;
     }
@@ -335,7 +349,7 @@
   
   .General_h1{
     color: #bc630b;
-    font-size: 36px;
+    font-size: 28px;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -450,7 +464,7 @@
   
   
   
-  /* //////////Accomodation page css /////////// */
+  /* //////////Accomodation page css ////////.Accomodation_menu-button.active/// */
   
   .Accomodation_menu {
     display: flex;
@@ -484,7 +498,7 @@
   }
   
   .Accomodation_menu-button.active {
-    background-color: orange; /* Change background color for active button */
+    background-color: #bc4222;; /* Change background color for active button */
   }
   
   /* Media query for responsiveness */
@@ -521,7 +535,7 @@
   
   .notice-container {
     width: auto;
-    margin: 30px;
+    margin: 30px 30px 0 30px;
     padding: 20px;
     background-color: #f4f4f9;
     border-radius: 8px;
@@ -772,7 +786,14 @@
     position: relative;
     margin:15px;
   }
-  
+  .CardFlip_heading span{
+    font-size: 14px;
+    /* text-transform:lowercase; */
+
+  }
+  .CardFlip_heading link{
+    text-decoration: none;
+  }
   
   .CardFlip_description {
     width: 100%;
@@ -801,6 +822,7 @@
     flex-wrap: wrap; /* Allow cards to wrap */
     max-width: 1200px; /* Increased for larger cards on desktop */
     padding: 2rem; /* Added padding */
+    padding-top: 4%;
   }
   
   .CardFlip_card {
@@ -913,10 +935,14 @@
     align-items: center;
     font-size: 13px;
     margin:5px;
+    text-align: justify;
+    padding-left: 3%;
+    padding-right: 3%;
+
   }
 
   .CardFlip_content .CardFlip_heading{
-    font-size: 25px;
+    font-size: 24px;
   }
   
   .CardFlip_back .button {

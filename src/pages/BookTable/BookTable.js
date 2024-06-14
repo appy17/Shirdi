@@ -3,6 +3,8 @@ import "./BookTable.css"
 import Navbar from '../../components/Navbar'
 import Social from '../../components/social-icon/Social'
 import Footer from '../../components/Footer'
+import regimg from "../../assets/images/templeimgregulation.jpg";
+
 
 const books = [
   { id: 1, name: 'SHRI SAICHARITRA', language: 'MARATHI', price: '₹113.00' },
@@ -97,6 +99,31 @@ return (
 <div>
 <Navbar/>
 <Social/>
+
+<div
+                className="about-background"
+                style={{ backgroundImage: `url(${regimg})`,}}
+            ></div>
+            <div>
+                <marquee behavior="" direction="">
+                    🚩
+                    <span className="about-marquee">
+                        Shri Saibaba Sansthan Trust, Shirdi
+                    </span>
+                    🚩
+                </marquee>
+                <div className="about-path">
+                    <span> Home &#9654;   e-Library   &#9654; Price List 
+</span>
+                </div>
+                <div className="places-head">
+                    <h1 style={{textAlign:"center", fontSize:"33px"}}>Price List 
+</h1>
+                </div>
+            </div>
+
+
+<div className='priceList'>
       <div className="BookTable_container">
          
     <h1 className="BookTable_heading">PUBLICATION DEPARTMENT</h1>
@@ -128,6 +155,7 @@ return (
         </ul>
       </div>
       <Footer/>
+      </div>
       </div>
     );
   };

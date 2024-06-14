@@ -1,21 +1,28 @@
 import React, { useEffect } from "react";
 import { RiLiveLine } from "react-icons/ri";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Pillar from "../assets/images/pillar.png";
 import Logo from "../assets/download.png";
 import Pillar2 from "../assets/images/pillar2.png";
 import BG from "../assets/images/bg.png";
 import Sai from "../assets/images/sai-front.png";
-import Spin from '../assets/images/Circle.png'
+import Spin from '../assets/images/Circle.png';
 
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const AboutSection = () => {
   useEffect(() => {
     AOS.init();
   }, []);
 
-  // Chetan
+  const handleLiveButtonClick = () => {
+    window.open(
+      "https://sai.org.in/node/504?width=960&height=540&iframe=true",
+      "_blank"
+    );
+  };
+  
+
   return (
     <section className="about">
       <style>
@@ -28,28 +35,31 @@ const AboutSection = () => {
               background-position: 100% 50%;
             }
           }
+          .live-btn {
+            display: inline-block;
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+          }
+          .live-btn:hover {
+            background-color: #cc0000;
+          }
         `}
       </style>
+
       <div className="title-wrapper">
         <div className="about-head">
           <h3>
             <span className="about-head-span">About Us</span>
           </h3>
         </div>
-        {/* <div className='img-container'>
-                    <img classname='img' src={Logo} alt="" width={100} />
-                </div> */}
       </div>
-
-      {/* <div>
-        <div className="pillar">
-          <img src={Pillar} alt="" className="pillar1-img" />
-        </div>
-
-        <div className="pillar2">
-          <img src={Pillar2} alt="" className="pillar1-img"/>
-        </div>
-      </div> */}
 
       <div className="contain">
         <div
@@ -58,7 +68,6 @@ const AboutSection = () => {
           data-aos-duration="1500"
         >
           <img src={Spin} alt="" width={550} className="bg" />
-          {/* <img src={Spin} alt="" className="sai circle"/> */}
           <img src={Sai} alt="" className="sai" />
         </div>
 
@@ -74,9 +83,10 @@ const AboutSection = () => {
           <button className="btn">Read More</button>
         </div>
       </div>
+
       <div className="live" data-aos="fade-up" data-aos-duration="1500">
         <h1>Live Darshan</h1>
-        <button className="live-btn">
+        <button className="live-btn" onClick={handleLiveButtonClick}>
           Live
           <RiLiveLine className="liveicon" />
         </button>

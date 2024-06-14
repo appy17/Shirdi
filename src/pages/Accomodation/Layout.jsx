@@ -4,12 +4,38 @@ import CardFlip from './Accomodation/flipcard'
 import Navbar from '../../components/Navbar'
 import Social from '../../components/social-icon/Social'
 import Footer from '../../components/Footer'
+// import pujaImage from "../../assets/images/accomodations-banner.jpg";
+import regimg from "../../assets/images/templeimgregulation.jpg";
 
 function Layout({children}) {
   return (
    <>
     <Navbar/>
     <Social/>
+
+    <div
+                className="about-background"
+                style={{ backgroundImage: `url(${regimg})`,}}
+            ></div>
+            <div>
+                <marquee behavior="" direction="">
+                    🚩
+                    <span className="about-marquee">
+                        Shri Saibaba Sansthan Trust, Shirdi
+                    </span>
+                    🚩
+                </marquee>
+                <div className="about-path">
+                    <span> Home &#9654;  Online Services   &#9654; Accommodation Booking 
+</span>
+                </div>
+                <div className="places-head">
+                    <h1 style={{textAlign:"left", fontSize:"33px"}}>Accommodation Booking 
+</h1>
+                </div>
+            </div>
+               
+<div className='accomodation'>
 <CardFlip/>
 <Accomodation/>
 {children}
@@ -33,6 +59,7 @@ function Layout({children}) {
     <li class="notice-point">Hot water will be available from 3.00 a.m. to the time till hot water is available.</li>
     <li class="notice-point">Sai devotees having any suggestions/complaints regarding this can contact us at email - saibaba@sai.org.in / support@sai.org.in Telephone- 02423-258956/258963.</li>
   </ol>
+</div>
 </div>
 <Footer/>
    </>

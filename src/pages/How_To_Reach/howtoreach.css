@@ -1,5 +1,9 @@
 /* //////////Bus CSS Start////////// */
 
+
+.how-to-reach{
+  background: #fff;
+}
 .bus_heading {
   margin-left: 20px;
   margin-top: 30px;
@@ -428,6 +432,7 @@
 .How_menu {
   display: flex;
   justify-content: center;
+  padding-top: 4%;
 }
 
 .How_menu-link {
