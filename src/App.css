@@ -518,6 +518,10 @@ grid-auto-rows: minmax(100px, auto);
   background: transparent;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header {
   width: 100%;
   height: auto;
@@ -542,7 +546,6 @@ grid-auto-rows: minmax(100px, auto);
   display: flex;
   align-items: center;
   font-weight: 400;
-
 }
 
 .logo span {
@@ -560,7 +563,6 @@ grid-auto-rows: minmax(100px, auto);
       -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
       1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
   }
-
   30% {
     color: hsl(230, 50%, 53%);
     text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
@@ -568,7 +570,6 @@ grid-auto-rows: minmax(100px, auto);
       -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
       0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
   }
-
   40% {
     color: hsl(126, 51%, 46%);
     text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
@@ -576,7 +577,6 @@ grid-auto-rows: minmax(100px, auto);
       -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
       0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
   }
-
   70% {
     color: hsl(0, 45%, 50%);
     text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
@@ -584,7 +584,6 @@ grid-auto-rows: minmax(100px, auto);
       0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
       -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
   }
-
   100% {
     color: hsl(25, 97%, 47%);
     text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
@@ -594,25 +593,44 @@ grid-auto-rows: minmax(100px, auto);
   }
 }
 
-/* SideNav Bar   */
-
+/* Sidebar */
 .navbar {
   background-color: #bc630b;
   width: 300px;
-  height: auto;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
+  top: 0;
   right: 0;
-  transition: all ease-in-out 0.3s;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
   display: flex;
   flex-direction: column;
   object-fit: fill;
   padding: 60px 10px;
   z-index: 111;
-  animation: roll 0.4s ease-in-out;
+  overflow-y: auto;
 }
 
-.navbar.open .navbar {
-  transition: linear ease-out 0.3s;
+.navbar.open {
+  transform: translateX(0);
+}
+
+.cancel-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+}
+
+.music-toggle {
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
 }
 
 .sidebar-item {
@@ -620,7 +638,6 @@ grid-auto-rows: minmax(100px, auto);
   color: #fff;
   display: block;
   transition: background-color 0.15s;
-  height: 100%;
 }
 
 .sidebar-item:hover {
@@ -661,6 +678,7 @@ grid-auto-rows: minmax(100px, auto);
 .none {
   display: none;
 }
+
 
 /* Latest News  */
 

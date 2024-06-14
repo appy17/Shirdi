@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { IoLogoAndroid } from "react-icons/io";
 import { FaApple } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -7,9 +7,32 @@ import Logo from "../assets/images/logo.gif";
 import NavbarItems from "./NavbarItems";
 import items from "../Data/navlist.json";
 import { Link } from "react-router-dom";
+// import "./styles.css"; // Ensure this path is correct for your project structure
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const navbarRef = useRef(null);
+
+  useEffect(() => {
+    if (open) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.body.classList.remove("no-scroll");
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [open]);
 
   return (
     <section>
@@ -23,10 +46,10 @@ const Navbar = () => {
             <FaApple /> <span>IOS</span>
           </div>
         </div>
-        <Link to="/" className="logo"> {/* Use href="/" if not using react-router */}
-      <img src={Logo} alt="Logo" width={70} />
-      <span>Shri Sai Sansthan Trust, Shirdi</span>
-    </Link>
+        <Link to="/" className="logo">
+          <img src={Logo} alt="Logo" width={70} />
+          <span>Shri Sai Sansthan Trust, Shirdi</span>
+        </Link>
 
         <div
           className="humburger"
@@ -40,9 +63,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={open ? "navbar" : "none"}>
+      <div ref={navbarRef} className={`navbar ${open ? "open" : ""}`}>
+        <div className="cancel-btn" onClick={() => setOpen(false)}>
+          <IoClose />
+        </div>
         {items.map((item, index) => (
-          <NavbarItems key={index} item={item} />
+          <NavbarItems key={index} item={item} className="navbar-items" />
         ))}
       </div>
     </section>
