@@ -184,7 +184,7 @@ body {
 
 }
 
-.contain {
+/* .contain {
   width: 90%;
   margin: 20px auto;
   display: flex;
@@ -205,16 +205,16 @@ body {
   font-size: 20px;
   padding: 20px;
   /* padding: 50px; */
-}
+/* } */
 
-.image-div {
+/* .image-div {
   width: 50%;
   position: relative;
-  padding-left: 40px;
+  padding-left: 40px; */
   /* background-image: url("./assets/images/sai-front.png"); */
-}
+/* } */
 
-.bg {
+/* .bg {
   z-index: 0;
   animation: rotatelogo 8s linear infinite !important;
 }
@@ -227,6 +227,92 @@ body {
   width: 330px;
   left: 23%;
   transition: all ease-in-out 1s;
+} */
+
+.contain {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.info-div {
+  width: 100%;
+  text-align: center;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .info-div {
+    width: 40%;
+  }
+}
+
+.info-div p {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.image-div {
+  width: 100%;
+  position: relative;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .image-div {
+    width: 50%;
+    padding-left: 40px;
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.bg {
+  z-index: 0;
+  animation: rotatelogo 8s linear infinite !important;
+  max-width: 100%;
+}
+
+.sai {
+  position: absolute;
+  width: 60%; /* Adjust this value as needed */
+  max-width: 330px;
+  transition: all ease-in-out 1s;
+  transform: translateX(10%); /* Shift to the right */
+}
+
+/* Adjust width of .sai for different screen sizes */
+@media (max-width: 768px) {
+  .sai {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sai {
+    width: 80%;
+  }
+}
+
+@keyframes rotatelogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .sai:hover {

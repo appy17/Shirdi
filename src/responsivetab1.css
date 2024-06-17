@@ -11,17 +11,17 @@
     transform: translate(0%, 150%) !important;
   }
 
-  .bg {
-    position: absolute;
-    /* top: 10%; */
-    width: 80%;
+  /* .bg {
+    position: absolute; */
+    /* top: 10%; this is comment already */
+    /* width: 80%;
     right: 15%;
-  }
+  } */
 
-  .sai {
+  /* .sai {
     width: 50%;
     top: 5%;
-  }
+  } */
 
   .info-div p {
     padding: 0px;
