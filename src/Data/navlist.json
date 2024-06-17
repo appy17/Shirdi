@@ -128,7 +128,7 @@
             }, 
             {
                 "title" : "Audio",
-                "path" : "/"
+                "path" : "/audio"
             }
         ]
     },

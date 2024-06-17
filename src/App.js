@@ -28,6 +28,7 @@ import Recruitment from "./pages/Recruitment/Recruitment";
 import Layout from "./pages/Accomodation/Layout";
 import Reach_layout from "./pages/How_To_Reach/Reach_layout";
 import BookTable from "./pages/BookTable/BookTable";
+import MusicPlayer from "./pages/AudioPage/audio";
 
 
 // import Regulations from "./pages/Regulations";
@@ -69,7 +70,7 @@ function App() {
          <Route path="/howtoreach" element={<Reach_layout/>}/>
          <Route path="/pricelist" element={<BookTable/>}/>
 
-    
+    <Route path="/audio" element={<MusicPlayer/>}/>
 
       </Routes>
     </div>
