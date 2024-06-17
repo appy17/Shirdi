@@ -124,7 +124,7 @@ const Gallery = () => {
         🚩
     </marquee>
     <div className="about-path">
-        <span> Home &#9654; Sai Temple &#9654; Photo Gallery
+        <span> Home &#9654;  Daily Updates &#9654; Photo Gallery
 </span>
     </div>
     <div className="places-head">

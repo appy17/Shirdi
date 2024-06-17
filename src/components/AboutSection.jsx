@@ -8,6 +8,8 @@ import Pillar2 from "../assets/images/pillar2.png";
 import BG from "../assets/images/bg.png";
 import Sai from "../assets/images/sai-front.png";
 import Spin from '../assets/images/Circle.png';
+import { useNavigate } from "react-router-dom";
+
 
 
 const AboutSection = () => {
@@ -22,6 +24,12 @@ const AboutSection = () => {
     );
   };
   
+
+  const navigate = useNavigate();
+
+  const handleReadMoreClick = () => {
+    navigate('/about');
+  }
 
   return (
     <section className="about">
@@ -80,7 +88,7 @@ const AboutSection = () => {
             amenities to Sai devotees who are visiting Shirdi and Sai Samadhi
             Temple.
           </p>
-          <button className="btn">Read More</button>
+          <button className="btn" onClick={handleReadMoreClick}>Read More</button>
         </div>
       </div>
 
