@@ -749,11 +749,11 @@
     --orange-light: hsla(50, 80%, 90%);
   }
   
-  *,
+  /* *,
   *:before,
   *:after {
     box-sizing: border-box;
-  }
+  } */
   
   /* html {
     font-size: 18px;
