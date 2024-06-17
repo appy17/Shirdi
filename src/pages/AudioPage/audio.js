@@ -12,6 +12,7 @@ import Navbar from "../../components/Navbar";
 import Social from "../../components/social-icon/Social";
 import Footer from "../../components/Footer";
 // import regimg from "../../assets/images/templeimgregulation.jpg";
+import pujaImage from "../../assets/images/pujaImage.jpg"
 
 const MusicPlayer = () => {
   const songsPerPage = 10;
@@ -381,8 +382,36 @@ const MusicPlayer = () => {
 
   return (
     <>
-      <Navbar />
-      <Social />
+   
+
+ 
+<Navbar/>
+<Social/>
+
+
+<div
+       className="about-background"
+       style={{ backgroundImage: `url(${pujaImage})` }}
+   ></div>
+   <div>
+       <marquee behavior="" direction="">
+           🚩
+           <span className="about-marquee">
+               Shri Saibaba Sansthan Trust, Shirdi
+           </span>
+           🚩
+       </marquee>
+       <div className="about-path">
+           <span> Home &#9654; Sai Temple &#9654; Puja
+</span>
+       </div>
+       <div className="places-head">
+           <h1>Sai Darshan Video
+</h1>
+       </div>
+   </div>
+
+<div className='audio-Section'>
       
     
       <div className="audio-container">
@@ -450,6 +479,7 @@ const MusicPlayer = () => {
           </div>
         </div>
         <audio id="audio-player" controls style={{ display: "none" }}></audio>
+      </div>
       </div>
       <Footer />
     </>

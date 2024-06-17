@@ -124,7 +124,7 @@
             }, 
             {
                 "title" : "Video",
-                "path" : "/"
+                "path" : "/video"
             }, 
             {
                 "title" : "Audio",
