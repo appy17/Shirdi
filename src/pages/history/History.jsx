@@ -49,7 +49,7 @@ const History = () => {
           🚩
         </marquee>
         <div className="about-path">
-          <span> Home &#9654; About Sanathan &#9654; About Us</span>
+          <span> Home &#9654;  SAI Temple &#9654; History</span>
         </div>
 
         <div

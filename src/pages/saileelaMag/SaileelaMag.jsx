@@ -24,7 +24,7 @@ const SaileelaMag = () => {
           🚩
         </marquee>
         <div className="about-path">
-          <span> Home &#9654; About Sanathan &#9654; About Us</span>
+          <span> Home &#9654; e-Library  &#9654; Saileela Magazine</span>
         </div>
 
         <div

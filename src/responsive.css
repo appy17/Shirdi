@@ -83,21 +83,21 @@
         display: none;
     }
 
-    .contain {
+    /* .contain {
         width: 100%;
         display: flex;
         flex-direction: column;
         margin: 0;
-    }
+    }*/
 
-    .info-div {
+    /* .info-div {
         width: 100%;
         margin: 0;
 
-    }
+    } */
 
 
-    .image-div {
+    /* .image-div {
         width: 100%;
         padding-left: 0;
     }
@@ -125,7 +125,7 @@
     .sai {
         top: 0%;
         left: 22%;
-    }
+    }  */
 
     .btn {
         display: flex;

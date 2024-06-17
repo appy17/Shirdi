@@ -748,13 +748,13 @@
     --orange: hsl(50, 80%, 50%);
     --orange-light: hsla(50, 80%, 90%);
   }
-/*   
-*,
+  
+  /* *,
   *:before,
   *:after {
     box-sizing: border-box;
-  } */
-  
+  } 
+   */
   /* html {
     font-size: 18px;
     line-height: 1.5;
