@@ -37,7 +37,7 @@ const Train = () => {
 
       <input
         type="text"
-        placeholder="Search destination..."
+        placeholder="Search Train..."
         value={searchTerm}
         onChange={handleSearchChange}
         className="search-input"

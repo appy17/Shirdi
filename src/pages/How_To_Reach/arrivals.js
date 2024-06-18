@@ -1,16 +1,29 @@
 import React from "react";
 import { list4 } from "./dummy";
-
-
-import { ImAirplane } from "react-icons/im";
-
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Arrival = () => {
+
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const filteredDestinations = list4.filter((item) =>
+    item.Destination.toLowerCase().includes(searchTerm.toLowerCase())
+  );
   return (
     <div className="Arrival_container">
+          <input
+        type="text"
+        placeholder="Search Flight Destination..."
+        value={searchTerm}
+        onChange={handleSearchChange}
+        className="search-input"
+      />
  
-      {/* <h2>Arrivals</h2> */}
+  
       <ul className="Arrival_responsive-table">
         <li className="Arrival_table-header">
           <div className="col">Flight</div>
@@ -19,7 +32,11 @@ const Arrival = () => {
           <div className="col">Departure</div>
         </li>
 
-        {list4.map((flight, index) => (
+          { filteredDestinations.length === 0 ? (
+       
+       <p className="not-found">Flight is not available</p>
+ 
+   ) : (filteredDestinations.map((flight, index) => (
           <li className="Arrival_table-row" key={index}>
             <div className="col" data-label="Flight">
               {flight.Flight}
@@ -34,9 +51,10 @@ const Arrival = () => {
               {flight.Departure}
             </div>
           </li>
-        ))}
+          )))}
+  
       </ul>
-    </div>
+      </div>
   );
 };
 
