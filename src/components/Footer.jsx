@@ -7,9 +7,31 @@ import {
   FaApple,
 } from "react-icons/fa6";
 import { IoLogoAndroid } from "react-icons/io";
+import { FaArrowUp } from "react-icons/fa6";
+
 
 const Footer = () => {
+
+  const[isVisible,setIsVisible ] = useState(false);
+  const scrollTop = () =>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth",
+    });
+  };
+
+  const listenToScroll = () =>{
+    let heightToHidden = 250;
+    const windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    windowScroll > heightToHidden ? setIsVisible(true) : setIsVisible(false);
+  }
+
+  useEffect(()=>{
+    window.addEventListener("scroll", listenToScroll);
+  })
+
   return (
+    <>
     <footer>
       <div className="footer">
         <div className="quick">
@@ -140,6 +162,12 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+
+      {/* //scroll to top */}
+      {isVisible && (   <div className='scroll_top' onClick={scrollTop}>
+      <FaArrowUp className="arrow"/>
+    </div>)}
+    </>
   );
 };
 
