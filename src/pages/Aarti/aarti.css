@@ -16,7 +16,7 @@
 }
 
 .aarti-time {
-  font-size: 60px;
+  font-size: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -173,7 +173,7 @@ width:350px;
     flex-wrap: wrap;
   }
   .aarti-time {
-    font-size: 50px;
+    font-size: 40px;
   }
   .aarti-button {
     font-size: 0.9em;
@@ -203,7 +203,7 @@ width:350px;
 
 @media screen and (max-width: 480px) {
   .aarti-time {
-    font-size: 30px;
+    font-size: 28px;
   }
   .aarti-button {
     font-size: 0.8em;
@@ -211,7 +211,7 @@ width:350px;
   }
   .aarti-container {
   
-    padding: 30px;
+    padding: 20px;
  
   }
   .aarti-pop {
@@ -226,13 +226,6 @@ width:350px;
 
   .aarti-time img {
     display: none;
-     
-     }
-}
-@media screen and (max-width: 1257px) {
-
-  .aarti-time{
-   font-size: 35px;
      
      }
 }
