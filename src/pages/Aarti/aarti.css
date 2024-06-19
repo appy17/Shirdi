@@ -17,12 +17,23 @@
 
 .aarti-time {
   font-size: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+.aarti-time img {
+height :300px;
+width:350px;
+
+
+}
+
 
 .aarti-date span {
   font-size: 40px;
   font-weight: bolder;
   border-bottom: 2px solid #edc756;
+ color:orange; 
 }
 
 .aarti-main-content {
@@ -141,6 +152,7 @@
   font-size: 1.2em;
   color: #c82707;
   animation: blink-animation 1s infinite;
+  font-weight: bold;
 }
 
 @keyframes blink-animation {
@@ -183,6 +195,10 @@
     font-size:20px;
 
   }
+  .aarti-time img {
+   display: none;
+    
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -203,4 +219,20 @@
     font-size:15px;
 
   }
+}
+
+
+@media screen and (max-width: 1021px) {
+
+  .aarti-time img {
+    display: none;
+     
+     }
+}
+@media screen and (max-width: 1257px) {
+
+  .aarti-time{
+   font-size: 35px;
+     
+     }
 }

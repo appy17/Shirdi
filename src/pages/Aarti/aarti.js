@@ -79,33 +79,33 @@ const Aarti = () => {
 
     const handleListChange = (list) => {
         setActiveList(list);
-        setCurrentSong(null); // Stop any song playing when list changes
+        setCurrentSong(null); 
         setIsPlaying(false);
-        audioRef.current.pause(); // Pause audio when switching lists
-        setPlayIcon(true); // Reset play icon when switching lists
+        audioRef.current.pause(); 
+        setPlayIcon(true);
     };
 
     const handlePlayPause = (song) => {
         if (currentSong === song && isPlaying) {
             audioRef.current.pause();
             setIsPlaying(false);
-            setPlayIcon(true); // Set play icon when paused
+            setPlayIcon(true); 
         } else {
             if (currentSong !== song) {
                 setCurrentSong(song);
                 audioRef.current.src = song.url;
                 audioRef.current.play().then(() => {
                     setIsPlaying(true);
-                    setPlayIcon(false); // Set pause icon when playing
+                    setPlayIcon(false); 
                 }).catch((error) => {
                     console.log("Audio playback error:", error);
-                    setIsPlaying(false); // Handle any playback errors
-                    setPlayIcon(true); // Reset to play icon on error
+                    setIsPlaying(false); 
+                    setPlayIcon(true); 
                 });
             } else {
                 audioRef.current.play();
                 setIsPlaying(true);
-                setPlayIcon(false); // Set pause icon when playing
+                setPlayIcon(false); 
             }
         }
     };
