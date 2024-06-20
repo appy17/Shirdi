@@ -5,6 +5,7 @@ import Clock from './Clock';
 import Navbar from '../../components/Navbar';
 import Social from '../../components/social-icon/Social';
 import Footer from '../../components/Footer';
+import pujaImage from "../../assets/images/pujaImage.jpg"
 // import songs from "../../audio/Om_Shri_Sai_Nathay_Namah.mp3";
 
 const Aarti = () => {
@@ -114,6 +115,30 @@ const Aarti = () => {
         <>
             <Navbar />
             <Social />
+
+            <div
+                className="about-background"
+                style={{ backgroundImage: `url(${pujaImage})` }}
+            ></div>
+            <div>
+                <marquee behavior="" direction="">
+                    🚩
+                    <span className="about-marquee">
+                        Shri Saibaba Sansthan Trust, Shirdi
+                    </span>
+                    🚩
+                </marquee>
+                <div className="about-path">
+                    <span> Home &#9654; e-Library &#9654;Aarti Audio
+</span>
+                </div>
+                <div className="places-head">
+                    <h1>Aarti Audio
+</h1>
+                </div>
+            </div>
+
+        <div className='ArtiSection'>
             <div className="aarti-container">
                 <Clock />
                 <div className="responsive-table">
@@ -168,6 +193,7 @@ const Aarti = () => {
                         ))}
                     </div>
                 </div>
+            </div>
             </div>
             <Footer />
         </>
