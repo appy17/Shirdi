@@ -3,8 +3,28 @@ import { ImAirplane } from "react-icons/im";
 import Arrival from "./arrivals";  // Import the Arrival component
 import { list3 } from "./dummy";
 
-const Departure = () => (
+const Departure = () => {
+
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const filteredDestinations = list3.filter((item) =>
+    item.Destination.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+  return (
+
   <div className="Air_container">
+              <input
+        type="text"
+        placeholder="Search Flight 
+Destination..."
+        value={searchTerm}
+        onChange={handleSearchChange}
+        className="search-input"
+      />
     {/* <h2 className="h2">Departure</h2> */}
     <ul className="Air_responsive-table">
       <li className="Air_table-header">
@@ -14,7 +34,11 @@ const Departure = () => (
         <div className="Air_col">Departure</div>
       </li>
 
-      {list3.map((flight, index) => (
+      { filteredDestinations.length === 0 ? (
+       
+       <p className="not-found">Flight is not available</p>
+ 
+   ) : (filteredDestinations.map((flight, index) => (
         <li className="Air_table-row" key={index}>
           <div className="Air_col" data-label="Flight">
             {flight.Flight}
@@ -29,10 +53,11 @@ const Departure = () => (
             {flight.Departure}
           </div>
         </li>
-      ))}
+      )))}
     </ul>
   </div>
 );
+}
 
 const Air = () => {
   const [showArrival, setShowArrival] = useState(false); // State to toggle between Departure and Arrival
@@ -40,6 +65,7 @@ const Air = () => {
   const handleButtonClick = (isArrival) => {
     setShowArrival(isArrival); // Update state based on button click
   };
+
 
   return (
     <div className="Air_container">

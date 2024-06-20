@@ -494,7 +494,7 @@ export const lists =[
   export const list2 = [
     {
       "No.": "01",
-      "Train Name (Code)": "Ypr Shiridi Exp (06539)",
+      "Train_Name": "Ypr Shiridi Exp (06539)",
       "Arrives": "08:00",
       "Departs": "Ends",
       "Stop Time": "-",
@@ -508,7 +508,7 @@ export const lists =[
     },
     {
       "No.": "02",
-      "Train Name (Code)": "Ypr Garibrath S (06540)",
+      "Train_Name": "Ypr Garibrath S (06540)",
       "Arrives": "Starts",
       "Departs": "18:20",
       "Stop Time": "-",
@@ -522,7 +522,7 @@ export const lists =[
     },
     {
       "No.": "03",
-      "Train Name (Code)": "Vskp Shirdi Spl (08567)",
+      "Train_Name": "Vskp Shirdi Spl (08567)",
       "Arrives": "12:00",
       "Departs": "Ends",
       "Stop Time": "-",
@@ -536,7 +536,7 @@ export const lists =[
     },
     {
       "No.": "04",
-      "Train Name (Code)": "Snsi Vskp Spl (08568)",
+      "Train_Name": "Snsi Vskp Spl (08568)",
       "Arrives": "Starts",
       "Departs": "19:10",
       "Stop Time": "-",
@@ -550,7 +550,7 @@ export const lists =[
     },
     {
       "No.": "07",
-      "Train Name (Code)": "Dr Sainagar Express (12131)",
+      "Train_Name": "Dr Sainagar Express (12131)",
       "Arrives": "03:51",
       "Departs": "Ends",
       "Stop Time": "-",
@@ -564,7 +564,7 @@ export const lists =[
     },
     {
       "No.": "08",
-      "Train Name (Code)": "Sainagar Dr Express (12132)",
+      "Train_Name": "Sainagar Dr Express (12132)",
       "Arrives": "Starts",
       "Departs": "22:25",
       "Stop Time": "-",
@@ -578,7 +578,7 @@ export const lists =[
     },
     {
       "No.": "09",
-      "Train Name (Code)": "Sainagar Shirdi Secunderabad Express (17001)",
+      "Train_Name": "Sainagar Shirdi Secunderabad Express (17001)",
       "Arrives": "Starts",
       "Departs": "17:10",
       "Stop Time": "-",
@@ -592,7 +592,7 @@ export const lists =[
     },
     {
       "No.": "10",
-      "Train Name (Code)": "Secunderabad sainagar Shirdi Express (17002)",
+      "Train_Name": "Secunderabad sainagar Shirdi Express (17002)",
       "Arrives": "09:15",
       "Departs": "Ends",
       "Stop Time": "-",
@@ -606,7 +606,7 @@ export const lists =[
     },
     {
       "No.": "11",
-      "Train Name (Code)": "Sainagar Shirdi Kakinada Town Express (17205)",
+      "Train_Name": "Sainagar Shirdi Kakinada Town Express (17205)",
       "Arrives": "17:10",
       "Departs": "Starts",
       "Stop Time": "-",
@@ -620,7 +620,7 @@ export const lists =[
     },
     {
       "No.": "12",
-      "Train Name (Code)": "Kakinada Town Sainagar Shirdi Express (17206)",
+      "Train_Name": "Kakinada Town Sainagar Shirdi Express (17206)",
       "Arrives": "09:15",
       "Departs": "Ends",
       "Stop Time": "-",
@@ -634,7 +634,7 @@ export const lists =[
     },
     {
       "No.": "13",
-      "Train Name (Code)": "Sainagar Shirdi Vijayawada Express (17207)",
+      "Train_Name": "Sainagar Shirdi Vijayawada Express (17207)",
       "Arrives": "17:10",
       "Departs": "Starts",
       "Stop Time": "-",
@@ -648,7 +648,7 @@ export const lists =[
     },
     {
       "No.": "14",
-      "Train Name (Code)": "Vijayawada sainagar Shirdi Express (17208)",
+      "Train_Name": "Vijayawada sainagar Shirdi Express (17208)",
       "Arrives": "09:15",
       "Departs": "Ends",
       "Stop Time": "-",
@@ -662,7 +662,7 @@ export const lists =[
     },
     {
       "No.": "16",
-      "Train Name (Code)": "Mumbai Cst Shirdi Fast Passenger (51033)",
+      "Train_Name": "Mumbai Cst Shirdi Fast Passenger (51033)",
       "Arrives": "10:55",
       "Departs": "Ends",
       "Stop Time": "-",
@@ -676,7 +676,7 @@ export const lists =[
     },
     {
       "No.": "17",
-      "Train Name (Code)": "Mumbai Cst Sainagar Shirdi Fast Passenger (51034)",
+      "Train_Name": "Mumbai Cst Sainagar Shirdi Fast Passenger (51034)",
       "Arrives": "16:40",
       "Departs": "Starts",
       "Stop Time": "-",
@@ -690,7 +690,7 @@ export const lists =[
     },
     {
       "No.": "18",
-      "Train Name (Code)": "Snsi Pvr Specia (01037)",
+      "Train_Name": "Snsi Pvr Specia (01037)",
       "Arrives": "05:00",
       "Departs": "Starts",
       "Stop Time": "-",
