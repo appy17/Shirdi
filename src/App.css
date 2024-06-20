@@ -2315,21 +2315,22 @@ footer {
 }
 
 /* scrool to top */
-.scroll_top{
+/* .scroll_top{
   position: fixed;
-  right: 30px;
+  right: 6px;
   bottom:30px;
   z-index: 99;
   cursor:pointer;
-  height: 2.7rem;
-  width: 2.7rem;
+  height: 2.5rem;
+  width: 2.5rem;
   line-height: 3rem;
   text-align: center;
   background:rgb(238 91 14);
+  background: red;
   border-radius: 10%;
-}
-.scroll_top .arrow{
+} */
+/* .scroll_top .arrow{
   text-align: center;
   font-size: 1rem;
   color:white;
-}
+} */
