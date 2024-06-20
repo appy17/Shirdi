@@ -735,7 +735,8 @@
   body.no-scroll {
     overflow: hidden;
   }
-  
+
+
   
   /* ///////////////////////////////////// */
   
@@ -810,6 +811,7 @@
   
   .CardFlip_card.flipped {
     transform: rotateY(180deg);
+    
   }
   
   
@@ -895,7 +897,19 @@
     background-color: var(--orange-light);
     opacity: 0.25;
     z-index: -1;
+    
   }
+
+  .CardFlip_front{
+   
+    box-sizing: border-box;
+}
+
+.CardFlip_front *,
+.CardFlip_front:before,
+.CardFlip_front:after {
+    box-sizing: border-box;
+}
   
   .CardFlip_front-content {
     display: flex;
