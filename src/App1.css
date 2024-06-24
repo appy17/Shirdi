@@ -325,7 +325,7 @@
 #footer-insta-ico-a:hover i {
   transform: scale(2.2);
   background: -webkit-linear-gradient(45deg, #da214f, #da214f);
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
@@ -336,7 +336,7 @@
 #footer-twit-ico-a:hover i {
   transform: scale(2.2);
   background: -webkit-linear-gradient(45deg, #192fda, #192fda);
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
@@ -346,7 +346,7 @@
 #footer-face-ico-a:hover i {
   transform: scale(2.2);
   background: -webkit-linear-gradient(45deg, blue, blue);
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
@@ -358,7 +358,7 @@
 #footer-youtube-ico-a:hover i {
   transform: scale(2.2);
   background: -webkit-linear-gradient(45deg, #da1919, #da1919);
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }
